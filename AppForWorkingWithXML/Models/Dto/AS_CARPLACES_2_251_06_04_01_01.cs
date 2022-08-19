@@ -16,7 +16,8 @@ using System.Xml.Serialization;
 
 
 /// <remarks/>
-namespace AppForWorkingWithXML.Models.AS.NORMATIVE.DOCS
+
+namespace AppForWorkingWithXML.Models.Dto
 {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
     [System.SerializableAttribute()]
@@ -24,22 +25,22 @@ namespace AppForWorkingWithXML.Models.AS.NORMATIVE.DOCS
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
     [System.Xml.Serialization.XmlRootAttribute(Namespace = "", IsNullable = false)]
-    public partial class NORMDOCS
+    public partial class Carplaces
     {
 
-        private NORMDOCSNORMDOC[] nORMDOCField;
+        private CarplacesCarplace[] cARPLACEField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("NORMDOC")]
-        public NORMDOCSNORMDOC[] NORMDOC
+        [System.Xml.Serialization.XmlElementAttribute("CARPLACE")]
+        public CarplacesCarplace[] CARPLACE
         {
             get
             {
-                return this.nORMDOCField;
+                return this.cARPLACEField;
             }
             set
             {
-                this.nORMDOCField = value;
+                this.cARPLACEField = value;
             }
         }
     }
@@ -50,36 +51,38 @@ namespace AppForWorkingWithXML.Models.AS.NORMATIVE.DOCS
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
-    public partial class NORMDOCSNORMDOC
+    public partial class CarplacesCarplace
     {
 
         private long idField;
 
-        private string nAMEField;
+        private long oBJECTIDField;
 
-        private System.DateTime dATEField;
+        private string oBJECTGUIDField;
+
+        private long cHANGEIDField;
 
         private string nUMBERField;
 
-        private string tYPEField;
+        private string oPERTYPEIDField;
 
-        private string kINDField;
+        private long pREVIDField;
+
+        private bool pREVIDFieldSpecified;
+
+        private long nEXTIDField;
+
+        private bool nEXTIDFieldSpecified;
 
         private System.DateTime uPDATEDATEField;
 
-        private string oRGNAMEField;
+        private System.DateTime sTARTDATEField;
 
-        private string rEGNUMField;
+        private System.DateTime eNDDATEField;
 
-        private System.DateTime rEGDATEField;
+        private CARPLACESCARPLACEISACTUAL iSACTUALField;
 
-        private bool rEGDATEFieldSpecified;
-
-        private System.DateTime aCCDATEField;
-
-        private bool aCCDATEFieldSpecified;
-
-        private string cOMMENTField;
+        private CARPLACESCARPLACEISACTIVE iSACTIVEField;
 
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
@@ -97,29 +100,43 @@ namespace AppForWorkingWithXML.Models.AS.NORMATIVE.DOCS
 
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string NAME
+        public long OBJECTID
         {
             get
             {
-                return this.nAMEField;
+                return this.oBJECTIDField;
             }
             set
             {
-                this.nAMEField = value;
+                this.oBJECTIDField = value;
             }
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "date")]
-        public System.DateTime DATE
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string OBJECTGUID
         {
             get
             {
-                return this.dATEField;
+                return this.oBJECTGUIDField;
             }
             set
             {
-                this.dATEField = value;
+                this.oBJECTGUIDField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public long CHANGEID
+        {
+            get
+            {
+                return this.cHANGEIDField;
+            }
+            set
+            {
+                this.cHANGEIDField = value;
             }
         }
 
@@ -139,29 +156,71 @@ namespace AppForWorkingWithXML.Models.AS.NORMATIVE.DOCS
 
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType = "integer")]
-        public string TYPE
+        public string OPERTYPEID
         {
             get
             {
-                return this.tYPEField;
+                return this.oPERTYPEIDField;
             }
             set
             {
-                this.tYPEField = value;
+                this.oPERTYPEIDField = value;
             }
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "integer")]
-        public string KIND
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public long PREVID
         {
             get
             {
-                return this.kINDField;
+                return this.pREVIDField;
             }
             set
             {
-                this.kINDField = value;
+                this.pREVIDField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool PREVIDSpecified
+        {
+            get
+            {
+                return this.pREVIDFieldSpecified;
+            }
+            set
+            {
+                this.pREVIDFieldSpecified = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public long NEXTID
+        {
+            get
+            {
+                return this.nEXTIDField;
+            }
+            set
+            {
+                this.nEXTIDField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool NEXTIDSpecified
+        {
+            get
+            {
+                return this.nEXTIDFieldSpecified;
+            }
+            set
+            {
+                this.nEXTIDFieldSpecified = value;
             }
         }
 
@@ -180,101 +239,91 @@ namespace AppForWorkingWithXML.Models.AS.NORMATIVE.DOCS
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string ORGNAME
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "date")]
+        public System.DateTime STARTDATE
         {
             get
             {
-                return this.oRGNAMEField;
+                return this.sTARTDATEField;
             }
             set
             {
-                this.oRGNAMEField = value;
-            }
-        }
-
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string REGNUM
-        {
-            get
-            {
-                return this.rEGNUMField;
-            }
-            set
-            {
-                this.rEGNUMField = value;
+                this.sTARTDATEField = value;
             }
         }
 
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType = "date")]
-        public System.DateTime REGDATE
+        public System.DateTime ENDDATE
         {
             get
             {
-                return this.rEGDATEField;
+                return this.eNDDATEField;
             }
             set
             {
-                this.rEGDATEField = value;
-            }
-        }
-
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool REGDATESpecified
-        {
-            get
-            {
-                return this.rEGDATEFieldSpecified;
-            }
-            set
-            {
-                this.rEGDATEFieldSpecified = value;
-            }
-        }
-
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "date")]
-        public System.DateTime ACCDATE
-        {
-            get
-            {
-                return this.aCCDATEField;
-            }
-            set
-            {
-                this.aCCDATEField = value;
-            }
-        }
-
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool ACCDATESpecified
-        {
-            get
-            {
-                return this.aCCDATEFieldSpecified;
-            }
-            set
-            {
-                this.aCCDATEFieldSpecified = value;
+                this.eNDDATEField = value;
             }
         }
 
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string COMMENT
+        public CARPLACESCARPLACEISACTUAL ISACTUAL
         {
             get
             {
-                return this.cOMMENTField;
+                return this.iSACTUALField;
             }
             set
             {
-                this.cOMMENTField = value;
+                this.iSACTUALField = value;
             }
         }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public CARPLACESCARPLACEISACTIVE ISACTIVE
+        {
+            get
+            {
+                return this.iSACTIVEField;
+            }
+            set
+            {
+                this.iSACTIVEField = value;
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    public enum CARPLACESCARPLACEISACTUAL
+    {
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlEnumAttribute("0")]
+        Item0,
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlEnumAttribute("1")]
+        Item1,
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    public enum CARPLACESCARPLACEISACTIVE
+    {
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlEnumAttribute("0")]
+        Item0,
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlEnumAttribute("1")]
+        Item1,
     }
 }

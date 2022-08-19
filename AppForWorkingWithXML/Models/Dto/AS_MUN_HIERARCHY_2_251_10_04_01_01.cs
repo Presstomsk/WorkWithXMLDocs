@@ -16,7 +16,7 @@ using System.Xml.Serialization;
 
 
 /// <remarks/>
-namespace AppForWorkingWithXML.Models.AS.STEADS
+namespace AppForWorkingWithXML.Models.Dto
 {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
     [System.SerializableAttribute()]
@@ -24,22 +24,22 @@ namespace AppForWorkingWithXML.Models.AS.STEADS
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
     [System.Xml.Serialization.XmlRootAttribute(Namespace = "", IsNullable = false)]
-    public partial class STEADS
+    public partial class AsMunHierarchyItems
     {
 
-        private STEADSSTEAD[] sTEADField;
+        private AsMunHierarchyItemsItem[] iTEMField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("STEAD")]
-        public STEADSSTEAD[] STEAD
+        [System.Xml.Serialization.XmlElementAttribute("ITEM")]
+        public AsMunHierarchyItemsItem[] ITEM
         {
             get
             {
-                return this.sTEADField;
+                return this.iTEMField;
             }
             set
             {
-                this.sTEADField = value;
+                this.iTEMField = value;
             }
         }
     }
@@ -50,24 +50,28 @@ namespace AppForWorkingWithXML.Models.AS.STEADS
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
-    public partial class STEADSSTEAD
+    public partial class AsMunHierarchyItemsItem
     {
 
-        private string idField;
+        private long idField;
 
-        private string oBJECTIDField;
+        private long oBJECTIDField;
 
-        private string oBJECTGUIDField;
+        private long pARENTOBJIDField;
 
-        private string cHANGEIDField;
+        private bool pARENTOBJIDFieldSpecified;
 
-        private string nUMBERField;
+        private long cHANGEIDField;
 
-        private string oPERTYPEIDField;
+        private string oKTMOField;
 
-        private string pREVIDField;
+        private long pREVIDField;
 
-        private string nEXTIDField;
+        private bool pREVIDFieldSpecified;
+
+        private long nEXTIDField;
+
+        private bool nEXTIDFieldSpecified;
 
         private System.DateTime uPDATEDATEField;
 
@@ -75,13 +79,13 @@ namespace AppForWorkingWithXML.Models.AS.STEADS
 
         private System.DateTime eNDDATEField;
 
-        private STEADSSTEADISACTUAL iSACTUALField;
+        private ITEMSITEMISACTIVE iSACTIVEField;
 
-        private STEADSSTEADISACTIVE iSACTIVEField;
+        private string pATHField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "integer")]
-        public string ID
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public long ID
         {
             get
             {
@@ -94,8 +98,8 @@ namespace AppForWorkingWithXML.Models.AS.STEADS
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "integer")]
-        public string OBJECTID
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public long OBJECTID
         {
             get
             {
@@ -109,21 +113,35 @@ namespace AppForWorkingWithXML.Models.AS.STEADS
 
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string OBJECTGUID
+        public long PARENTOBJID
         {
             get
             {
-                return this.oBJECTGUIDField;
+                return this.pARENTOBJIDField;
             }
             set
             {
-                this.oBJECTGUIDField = value;
+                this.pARENTOBJIDField = value;
             }
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "integer")]
-        public string CHANGEID
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool PARENTOBJIDSpecified
+        {
+            get
+            {
+                return this.pARENTOBJIDFieldSpecified;
+            }
+            set
+            {
+                this.pARENTOBJIDFieldSpecified = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public long CHANGEID
         {
             get
             {
@@ -137,35 +155,21 @@ namespace AppForWorkingWithXML.Models.AS.STEADS
 
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string NUMBER
+        public string OKTMO
         {
             get
             {
-                return this.nUMBERField;
+                return this.oKTMOField;
             }
             set
             {
-                this.nUMBERField = value;
+                this.oKTMOField = value;
             }
         }
 
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string OPERTYPEID
-        {
-            get
-            {
-                return this.oPERTYPEIDField;
-            }
-            set
-            {
-                this.oPERTYPEIDField = value;
-            }
-        }
-
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "integer")]
-        public string PREVID
+        public long PREVID
         {
             get
             {
@@ -178,8 +182,22 @@ namespace AppForWorkingWithXML.Models.AS.STEADS
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "integer")]
-        public string NEXTID
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool PREVIDSpecified
+        {
+            get
+            {
+                return this.pREVIDFieldSpecified;
+            }
+            set
+            {
+                this.pREVIDFieldSpecified = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public long NEXTID
         {
             get
             {
@@ -188,6 +206,20 @@ namespace AppForWorkingWithXML.Models.AS.STEADS
             set
             {
                 this.nEXTIDField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool NEXTIDSpecified
+        {
+            get
+            {
+                return this.nEXTIDFieldSpecified;
+            }
+            set
+            {
+                this.nEXTIDFieldSpecified = value;
             }
         }
 
@@ -235,21 +267,7 @@ namespace AppForWorkingWithXML.Models.AS.STEADS
 
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public STEADSSTEADISACTUAL ISACTUAL
-        {
-            get
-            {
-                return this.iSACTUALField;
-            }
-            set
-            {
-                this.iSACTUALField = value;
-            }
-        }
-
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public STEADSSTEADISACTIVE ISACTIVE
+        public ITEMSITEMISACTIVE ISACTIVE
         {
             get
             {
@@ -260,29 +278,27 @@ namespace AppForWorkingWithXML.Models.AS.STEADS
                 this.iSACTIVEField = value;
             }
         }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string PATH
+        {
+            get
+            {
+                return this.pATHField;
+            }
+            set
+            {
+                this.pATHField = value;
+            }
+        }
     }
 
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
     [System.SerializableAttribute()]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
-    public enum STEADSSTEADISACTUAL
-    {
-
-        /// <remarks/>
-        [System.Xml.Serialization.XmlEnumAttribute("0")]
-        Item0,
-
-        /// <remarks/>
-        [System.Xml.Serialization.XmlEnumAttribute("1")]
-        Item1,
-    }
-
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
-    [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
-    public enum STEADSSTEADISACTIVE
+    public enum ITEMSITEMISACTIVE
     {
 
         /// <remarks/>

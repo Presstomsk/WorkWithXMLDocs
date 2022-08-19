@@ -16,7 +16,7 @@ using System.Xml.Serialization;
 
 
 /// <remarks/>
-namespace AppForWorkingWithXML.Models.AS.OPERATION.TYPES
+namespace AppForWorkingWithXML.Models.Dto
 {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
     [System.SerializableAttribute()]
@@ -24,22 +24,22 @@ namespace AppForWorkingWithXML.Models.AS.OPERATION.TYPES
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
     [System.Xml.Serialization.XmlRootAttribute(Namespace = "", IsNullable = false)]
-    public partial class OPERATIONTYPES
+    public partial class AddressObjectTypes
     {
 
-        private OPERATIONTYPESOPERATIONTYPE[] oPERATIONTYPEField;
+        private AddressObjectTypesAddressObjectType[] aDDRESSOBJECTTYPEField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("OPERATIONTYPE")]
-        public OPERATIONTYPESOPERATIONTYPE[] OPERATIONTYPE
+        [System.Xml.Serialization.XmlElementAttribute("ADDRESSOBJECTTYPE")]
+        public AddressObjectTypesAddressObjectType[] ADDRESSOBJECTTYPE
         {
             get
             {
-                return this.oPERATIONTYPEField;
+                return this.aDDRESSOBJECTTYPEField;
             }
             set
             {
-                this.oPERATIONTYPEField = value;
+                this.aDDRESSOBJECTTYPEField = value;
             }
         }
     }
@@ -50,14 +50,16 @@ namespace AppForWorkingWithXML.Models.AS.OPERATION.TYPES
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
-    public partial class OPERATIONTYPESOPERATIONTYPE
+    public partial class AddressObjectTypesAddressObjectType
     {
 
         private string idField;
 
-        private string nAMEField;
+        private string lEVELField;
 
         private string sHORTNAMEField;
+
+        private string nAMEField;
 
         private string dESCField;
 
@@ -84,16 +86,16 @@ namespace AppForWorkingWithXML.Models.AS.OPERATION.TYPES
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string NAME
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "integer")]
+        public string LEVEL
         {
             get
             {
-                return this.nAMEField;
+                return this.lEVELField;
             }
             set
             {
-                this.nAMEField = value;
+                this.lEVELField = value;
             }
         }
 
@@ -108,6 +110,20 @@ namespace AppForWorkingWithXML.Models.AS.OPERATION.TYPES
             set
             {
                 this.sHORTNAMEField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string NAME
+        {
+            get
+            {
+                return this.nAMEField;
+            }
+            set
+            {
+                this.nAMEField = value;
             }
         }
 

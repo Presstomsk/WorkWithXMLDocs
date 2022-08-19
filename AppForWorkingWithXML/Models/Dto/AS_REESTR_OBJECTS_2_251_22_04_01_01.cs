@@ -16,7 +16,7 @@ using System.Xml.Serialization;
 
 
 /// <remarks/>
-namespace AppForWorkingWithXML.Models.AS.HOUSE.TYPES
+namespace AppForWorkingWithXML.Models.Dto
 {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
     [System.SerializableAttribute()]
@@ -24,22 +24,22 @@ namespace AppForWorkingWithXML.Models.AS.HOUSE.TYPES
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
     [System.Xml.Serialization.XmlRootAttribute(Namespace = "", IsNullable = false)]
-    public partial class HOUSETYPES
+    public partial class ReestrObjects
     {
 
-        private HOUSETYPESHOUSETYPE[] hOUSETYPEField;
+        private ReestrObjectsObject[] oBJECTField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("HOUSETYPE")]
-        public HOUSETYPESHOUSETYPE[] HOUSETYPE
+        [System.Xml.Serialization.XmlElementAttribute("OBJECT")]
+        public ReestrObjectsObject[] OBJECT
         {
             get
             {
-                return this.hOUSETYPEField;
+                return this.oBJECTField;
             }
             set
             {
-                this.hOUSETYPEField = value;
+                this.oBJECTField = value;
             }
         }
     }
@@ -50,78 +50,76 @@ namespace AppForWorkingWithXML.Models.AS.HOUSE.TYPES
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
-    public partial class HOUSETYPESHOUSETYPE
+    public partial class ReestrObjectsObject
     {
 
-        private string idField;
+        private long oBJECTIDField;
 
-        private string nAMEField;
+        private System.DateTime cREATEDATEField;
 
-        private string sHORTNAMEField;
+        private long cHANGEIDField;
 
-        private string dESCField;
+        private string lEVELIDField;
 
         private System.DateTime uPDATEDATEField;
 
-        private System.DateTime sTARTDATEField;
+        private string oBJECTGUIDField;
 
-        private System.DateTime eNDDATEField;
+        private REESTR_OBJECTSOBJECTISACTIVE iSACTIVEField;
 
-        private bool iSACTIVEField;
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public long OBJECTID
+        {
+            get
+            {
+                return this.oBJECTIDField;
+            }
+            set
+            {
+                this.oBJECTIDField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "date")]
+        public System.DateTime CREATEDATE
+        {
+            get
+            {
+                return this.cREATEDATEField;
+            }
+            set
+            {
+                this.cREATEDATEField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public long CHANGEID
+        {
+            get
+            {
+                return this.cHANGEIDField;
+            }
+            set
+            {
+                this.cHANGEIDField = value;
+            }
+        }
 
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType = "integer")]
-        public string ID
+        public string LEVELID
         {
             get
             {
-                return this.idField;
+                return this.lEVELIDField;
             }
             set
             {
-                this.idField = value;
-            }
-        }
-
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string NAME
-        {
-            get
-            {
-                return this.nAMEField;
-            }
-            set
-            {
-                this.nAMEField = value;
-            }
-        }
-
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string SHORTNAME
-        {
-            get
-            {
-                return this.sHORTNAMEField;
-            }
-            set
-            {
-                this.sHORTNAMEField = value;
-            }
-        }
-
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string DESC
-        {
-            get
-            {
-                return this.dESCField;
-            }
-            set
-            {
-                this.dESCField = value;
+                this.lEVELIDField = value;
             }
         }
 
@@ -140,36 +138,22 @@ namespace AppForWorkingWithXML.Models.AS.HOUSE.TYPES
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "date")]
-        public System.DateTime STARTDATE
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string OBJECTGUID
         {
             get
             {
-                return this.sTARTDATEField;
+                return this.oBJECTGUIDField;
             }
             set
             {
-                this.sTARTDATEField = value;
-            }
-        }
-
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "date")]
-        public System.DateTime ENDDATE
-        {
-            get
-            {
-                return this.eNDDATEField;
-            }
-            set
-            {
-                this.eNDDATEField = value;
+                this.oBJECTGUIDField = value;
             }
         }
 
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public bool ISACTIVE
+        public REESTR_OBJECTSOBJECTISACTIVE ISACTIVE
         {
             get
             {
@@ -180,5 +164,21 @@ namespace AppForWorkingWithXML.Models.AS.HOUSE.TYPES
                 this.iSACTIVEField = value;
             }
         }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    public enum REESTR_OBJECTSOBJECTISACTIVE
+    {
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlEnumAttribute("0")]
+        Item0,
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlEnumAttribute("1")]
+        Item1,
     }
 }

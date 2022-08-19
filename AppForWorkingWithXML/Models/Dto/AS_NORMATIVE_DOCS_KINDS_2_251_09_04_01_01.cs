@@ -16,7 +16,7 @@ using System.Xml.Serialization;
 
 
 /// <remarks/>
-namespace AppForWorkingWithXML.Models.AS.NORMATIVE.DOCS.KINDS
+namespace AppForWorkingWithXML.Models.Dto
 {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
     [System.SerializableAttribute()]
@@ -24,14 +24,14 @@ namespace AppForWorkingWithXML.Models.AS.NORMATIVE.DOCS.KINDS
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
     [System.Xml.Serialization.XmlRootAttribute(Namespace = "", IsNullable = false)]
-    public partial class NDOCKINDS
+    public partial class NormativeDocsKinds
     {
 
-        private NDOCKIND[] nDOCKINDField;
+        private NormativeDocsKind[] nDOCKINDField;
 
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute("NDOCKIND")]
-        public NDOCKIND[] NDOCKIND
+        public NormativeDocsKind[] NDOCKIND
         {
             get
             {
@@ -51,7 +51,7 @@ namespace AppForWorkingWithXML.Models.AS.NORMATIVE.DOCS.KINDS
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
     [System.Xml.Serialization.XmlRootAttribute(Namespace = "", IsNullable = false)]
-    public partial class NDOCKIND
+    public partial class NormativeDocsKind
     {
 
         private string idField;

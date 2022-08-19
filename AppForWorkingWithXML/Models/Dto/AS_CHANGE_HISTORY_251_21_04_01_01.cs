@@ -16,7 +16,7 @@ using System.Xml.Serialization;
 
 
 /// <remarks/>
-namespace AppForWorkingWithXML.Models.AS.PARAM.TYPES
+namespace AppForWorkingWithXML.Models.Dto
 {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
     [System.SerializableAttribute()]
@@ -24,22 +24,22 @@ namespace AppForWorkingWithXML.Models.AS.PARAM.TYPES
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
     [System.Xml.Serialization.XmlRootAttribute(Namespace = "", IsNullable = false)]
-    public partial class PARAMTYPES
+    public partial class AsChangeHistoryItemsDto
     {
 
-        private PARAMTYPESPARAMTYPE[] pARAMTYPEField;
+        private AsChangeHistoryItemsItemDto[] iTEMField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("PARAMTYPE")]
-        public PARAMTYPESPARAMTYPE[] PARAMTYPE
+        [System.Xml.Serialization.XmlElementAttribute("ITEM")]
+        public AsChangeHistoryItemsItemDto[] ITEM
         {
             get
             {
-                return this.pARAMTYPEField;
+                return this.iTEMField;
             }
             set
             {
-                this.pARAMTYPEField = value;
+                this.iTEMField = value;
             }
         }
     }
@@ -50,134 +50,118 @@ namespace AppForWorkingWithXML.Models.AS.PARAM.TYPES
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
-    public partial class PARAMTYPESPARAMTYPE
+    public partial class AsChangeHistoryItemsItemDto
     {
 
-        private string idField;
+        private long cHANGEIDField;
 
-        private string nAMEField;
+        private long oBJECTIDField;
 
-        private string cODEField;
+        private string aDROBJECTIDField;
 
-        private string dESCField;
+        private string oPERTYPEIDField;
 
-        private System.DateTime uPDATEDATEField;
+        private long nDOCIDField;
 
-        private System.DateTime sTARTDATEField;
+        private bool nDOCIDFieldSpecified;
 
-        private System.DateTime eNDDATEField;
+        private System.DateTime cHANGEDATEField;
 
-        private bool iSACTIVEField;
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public long CHANGEID
+        {
+            get
+            {
+                return this.cHANGEIDField;
+            }
+            set
+            {
+                this.cHANGEIDField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public long OBJECTID
+        {
+            get
+            {
+                return this.oBJECTIDField;
+            }
+            set
+            {
+                this.oBJECTIDField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string ADROBJECTID
+        {
+            get
+            {
+                return this.aDROBJECTIDField;
+            }
+            set
+            {
+                this.aDROBJECTIDField = value;
+            }
+        }
 
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType = "integer")]
-        public string ID
+        public string OPERTYPEID
         {
             get
             {
-                return this.idField;
+                return this.oPERTYPEIDField;
             }
             set
             {
-                this.idField = value;
+                this.oPERTYPEIDField = value;
             }
         }
 
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string NAME
+        public long NDOCID
         {
             get
             {
-                return this.nAMEField;
+                return this.nDOCIDField;
             }
             set
             {
-                this.nAMEField = value;
+                this.nDOCIDField = value;
             }
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string CODE
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool NDOCIDSpecified
         {
             get
             {
-                return this.cODEField;
+                return this.nDOCIDFieldSpecified;
             }
             set
             {
-                this.cODEField = value;
-            }
-        }
-
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string DESC
-        {
-            get
-            {
-                return this.dESCField;
-            }
-            set
-            {
-                this.dESCField = value;
+                this.nDOCIDFieldSpecified = value;
             }
         }
 
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType = "date")]
-        public System.DateTime UPDATEDATE
+        public System.DateTime CHANGEDATE
         {
             get
             {
-                return this.uPDATEDATEField;
+                return this.cHANGEDATEField;
             }
             set
             {
-                this.uPDATEDATEField = value;
-            }
-        }
-
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "date")]
-        public System.DateTime STARTDATE
-        {
-            get
-            {
-                return this.sTARTDATEField;
-            }
-            set
-            {
-                this.sTARTDATEField = value;
-            }
-        }
-
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "date")]
-        public System.DateTime ENDDATE
-        {
-            get
-            {
-                return this.eNDDATEField;
-            }
-            set
-            {
-                this.eNDDATEField = value;
-            }
-        }
-
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public bool ISACTIVE
-        {
-            get
-            {
-                return this.iSACTIVEField;
-            }
-            set
-            {
-                this.iSACTIVEField = value;
+                this.cHANGEDATEField = value;
             }
         }
     }

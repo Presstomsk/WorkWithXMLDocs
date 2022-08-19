@@ -16,8 +16,7 @@ using System.Xml.Serialization;
 
 
 /// <remarks/>
-
-namespace AppForWorkingWithXML.Models.AS.APARTMENT.TYPES
+namespace AppForWorkingWithXML.Models.Dto
 {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
     [System.SerializableAttribute()]
@@ -25,22 +24,22 @@ namespace AppForWorkingWithXML.Models.AS.APARTMENT.TYPES
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
     [System.Xml.Serialization.XmlRootAttribute(Namespace = "", IsNullable = false)]
-    public partial class APARTMENTTYPES
+    public partial class OperationTypes
     {
 
-        private APARTMENTTYPESAPARTMENTTYPE[] aPARTMENTTYPEField;
+        private OperationTypesOperationType[] oPERATIONTYPEField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("APARTMENTTYPE")]
-        public APARTMENTTYPESAPARTMENTTYPE[] APARTMENTTYPE
+        [System.Xml.Serialization.XmlElementAttribute("OPERATIONTYPE")]
+        public OperationTypesOperationType[] OPERATIONTYPE
         {
             get
             {
-                return this.aPARTMENTTYPEField;
+                return this.oPERATIONTYPEField;
             }
             set
             {
-                this.aPARTMENTTYPEField = value;
+                this.oPERATIONTYPEField = value;
             }
         }
     }
@@ -51,7 +50,7 @@ namespace AppForWorkingWithXML.Models.AS.APARTMENT.TYPES
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
-    public partial class APARTMENTTYPESAPARTMENTTYPE
+    public partial class OperationTypesOperationType
     {
 
         private string idField;

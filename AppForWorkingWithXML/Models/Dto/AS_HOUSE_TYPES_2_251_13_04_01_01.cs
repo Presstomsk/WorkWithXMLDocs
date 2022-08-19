@@ -16,7 +16,7 @@ using System.Xml.Serialization;
 
 
 /// <remarks/>
-namespace AppForWorkingWithXML.Models.AS.ROOM.TYPES
+namespace AppForWorkingWithXML.Models.Dto
 {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
     [System.SerializableAttribute()]
@@ -24,22 +24,22 @@ namespace AppForWorkingWithXML.Models.AS.ROOM.TYPES
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
     [System.Xml.Serialization.XmlRootAttribute(Namespace = "", IsNullable = false)]
-    public partial class ROOMTYPES
+    public partial class HouseTypes
     {
 
-        private ROOMTYPESROOMTYPE[] rOOMTYPEField;
+        private HouseTypesHouseType[] hOUSETYPEField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ROOMTYPE")]
-        public ROOMTYPESROOMTYPE[] ROOMTYPE
+        [System.Xml.Serialization.XmlElementAttribute("HOUSETYPE")]
+        public HouseTypesHouseType[] HOUSETYPE
         {
             get
             {
-                return this.rOOMTYPEField;
+                return this.hOUSETYPEField;
             }
             set
             {
-                this.rOOMTYPEField = value;
+                this.hOUSETYPEField = value;
             }
         }
     }
@@ -50,7 +50,7 @@ namespace AppForWorkingWithXML.Models.AS.ROOM.TYPES
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
-    public partial class ROOMTYPESROOMTYPE
+    public partial class HouseTypesHouseType
     {
 
         private string idField;

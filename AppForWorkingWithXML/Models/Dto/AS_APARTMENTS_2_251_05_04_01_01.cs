@@ -16,7 +16,7 @@ using System.Xml.Serialization;
 
 
 /// <remarks/>
-namespace AppForWorkingWithXML.Models.AS.HOUSES
+namespace AppForWorkingWithXML.Models.Dto
 {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
     [System.SerializableAttribute()]
@@ -24,22 +24,22 @@ namespace AppForWorkingWithXML.Models.AS.HOUSES
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
     [System.Xml.Serialization.XmlRootAttribute(Namespace = "", IsNullable = false)]
-    public partial class HOUSES
+    public partial class Apartments
     {
 
-        private HOUSESHOUSE[] hOUSEField;
+        private ApartmentsApartment[] aPARTMENTField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("HOUSE")]
-        public HOUSESHOUSE[] HOUSE
+        [System.Xml.Serialization.XmlElementAttribute("APARTMENT")]
+        public ApartmentsApartment[] APARTMENT
         {
             get
             {
-                return this.hOUSEField;
+                return this.aPARTMENTField;
             }
             set
             {
-                this.hOUSEField = value;
+                this.aPARTMENTField = value;
             }
         }
     }
@@ -50,7 +50,7 @@ namespace AppForWorkingWithXML.Models.AS.HOUSES
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
-    public partial class HOUSESHOUSE
+    public partial class ApartmentsApartment
     {
 
         private long idField;
@@ -61,19 +61,11 @@ namespace AppForWorkingWithXML.Models.AS.HOUSES
 
         private long cHANGEIDField;
 
-        private string hOUSENUMField;
+        private string nUMBERField;
 
-        private string aDDNUM1Field;
+        private string aPARTTYPEField;
 
-        private string aDDNUM2Field;
-
-        private string hOUSETYPEField;
-
-        private string aDDTYPE1Field;
-
-        private string aDDTYPE2Field;
-
-        private string oPERTYPEIDField;
+        private long oPERTYPEIDField;
 
         private long pREVIDField;
 
@@ -89,9 +81,9 @@ namespace AppForWorkingWithXML.Models.AS.HOUSES
 
         private System.DateTime eNDDATEField;
 
-        private HOUSESHOUSEISACTUAL iSACTUALField;
+        private APARTMENTSAPARTMENTISACTUAL iSACTUALField;
 
-        private HOUSESHOUSEISACTIVE iSACTIVEField;
+        private APARTMENTSAPARTMENTISACTIVE iSACTIVEField;
 
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
@@ -151,91 +143,35 @@ namespace AppForWorkingWithXML.Models.AS.HOUSES
 
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string HOUSENUM
+        public string NUMBER
         {
             get
             {
-                return this.hOUSENUMField;
+                return this.nUMBERField;
             }
             set
             {
-                this.hOUSENUMField = value;
+                this.nUMBERField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "integer")]
+        public string APARTTYPE
+        {
+            get
+            {
+                return this.aPARTTYPEField;
+            }
+            set
+            {
+                this.aPARTTYPEField = value;
             }
         }
 
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string ADDNUM1
-        {
-            get
-            {
-                return this.aDDNUM1Field;
-            }
-            set
-            {
-                this.aDDNUM1Field = value;
-            }
-        }
-
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string ADDNUM2
-        {
-            get
-            {
-                return this.aDDNUM2Field;
-            }
-            set
-            {
-                this.aDDNUM2Field = value;
-            }
-        }
-
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "integer")]
-        public string HOUSETYPE
-        {
-            get
-            {
-                return this.hOUSETYPEField;
-            }
-            set
-            {
-                this.hOUSETYPEField = value;
-            }
-        }
-
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "integer")]
-        public string ADDTYPE1
-        {
-            get
-            {
-                return this.aDDTYPE1Field;
-            }
-            set
-            {
-                this.aDDTYPE1Field = value;
-            }
-        }
-
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "integer")]
-        public string ADDTYPE2
-        {
-            get
-            {
-                return this.aDDTYPE2Field;
-            }
-            set
-            {
-                this.aDDTYPE2Field = value;
-            }
-        }
-
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "integer")]
-        public string OPERTYPEID
+        public long OPERTYPEID
         {
             get
             {
@@ -347,7 +283,7 @@ namespace AppForWorkingWithXML.Models.AS.HOUSES
 
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public HOUSESHOUSEISACTUAL ISACTUAL
+        public APARTMENTSAPARTMENTISACTUAL ISACTUAL
         {
             get
             {
@@ -361,7 +297,7 @@ namespace AppForWorkingWithXML.Models.AS.HOUSES
 
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public HOUSESHOUSEISACTIVE ISACTIVE
+        public APARTMENTSAPARTMENTISACTIVE ISACTIVE
         {
             get
             {
@@ -378,7 +314,7 @@ namespace AppForWorkingWithXML.Models.AS.HOUSES
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
     [System.SerializableAttribute()]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
-    public enum HOUSESHOUSEISACTUAL
+    public enum APARTMENTSAPARTMENTISACTUAL
     {
 
         /// <remarks/>
@@ -394,7 +330,7 @@ namespace AppForWorkingWithXML.Models.AS.HOUSES
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
     [System.SerializableAttribute()]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
-    public enum HOUSESHOUSEISACTIVE
+    public enum APARTMENTSAPARTMENTISACTIVE
     {
 
         /// <remarks/>

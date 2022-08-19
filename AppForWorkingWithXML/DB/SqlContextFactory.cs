@@ -1,10 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Options;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace AppForWorkingWithXML.DB
 {
@@ -12,16 +7,16 @@ namespace AppForWorkingWithXML.DB
     {
        
         private DbContextOptions<MainContext> _options;
+     
 
         public SqlContextFactory(string connString)
         {
-
             _options = new DbContextOptionsBuilder<MainContext>()
-                        .UseSqlServer(connString).Options;
+                       .UseSqlServer(connString).Options;            
         }
 
-        public MainContext CreateContext()
-        {
+        public MainContext CreateDbContext()
+        {            
             return new MainContext(_options);
         }
     }

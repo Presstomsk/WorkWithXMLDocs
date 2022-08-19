@@ -24,8 +24,8 @@ namespace AppForWorkingWithXML.DB
 {
     public class MainContext : DbContext
     {
-
-        public DbSet<ADDRESSOBJECTS> AddressObdjects { get; set; }
+        public DbSet<ADDRESSOBJECTSOBJECT> Add { get; set; }
+        /*public DbSet<ADDRESSOBJECTS> AddressObdjects { get; set; }
         public DbSet<ITEMS> Items { get; set; }
         public DbSet<ADDRESSOBJECTTYPES> AddressObjectTypes { get; set; }
         public DbSet<Models.AS.ADM.HIERARCHY.ITEMS> ItemsAdmHierarchy { get; set; }
@@ -46,12 +46,12 @@ namespace AppForWorkingWithXML.DB
         public DbSet<REESTR_OBJECTS> ReestrObjects { get; set; }
         public DbSet<ROOMTYPES> RoomTypes { get; set; }
         public DbSet<ROOMS> Rooms { get; set; }
-        public DbSet<STEADS> Steads { get; set; }
+        public DbSet<STEADS> Steads { get; set; }*/
 
 
         public MainContext(DbContextOptions<MainContext> options) : base(options)
         {
-           
+           Database.EnsureCreated();
         }
 
         

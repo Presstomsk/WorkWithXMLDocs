@@ -16,7 +16,7 @@ using System.Xml.Serialization;
 
 
 /// <remarks/>
-namespace AppForWorkingWithXML.Models.AS.PARAM
+namespace AppForWorkingWithXML.Models.Dto
 {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
     [System.SerializableAttribute()]
@@ -24,14 +24,14 @@ namespace AppForWorkingWithXML.Models.AS.PARAM
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
     [System.Xml.Serialization.XmlRootAttribute(Namespace = "", IsNullable = false)]
-    public partial class PARAMS
+    public partial class Params
     {
 
-        private PARAMSPARAM[] pARAMField;
+        private ParamsParam[] pARAMField;
 
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute("PARAM")]
-        public PARAMSPARAM[] PARAM
+        public ParamsParam[] PARAM
         {
             get
             {
@@ -50,7 +50,7 @@ namespace AppForWorkingWithXML.Models.AS.PARAM
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
-    public partial class PARAMSPARAM
+    public partial class ParamsParam
     {
 
         private long idField;

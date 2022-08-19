@@ -16,7 +16,7 @@ using System.Xml.Serialization;
 
 
 /// <remarks/>
-namespace AppForWorkingWithXML.Models.AS.ADDR.TYPES
+namespace AppForWorkingWithXML.Models.Dto
 {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
     [System.SerializableAttribute()]
@@ -24,22 +24,22 @@ namespace AppForWorkingWithXML.Models.AS.ADDR.TYPES
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
     [System.Xml.Serialization.XmlRootAttribute(Namespace = "", IsNullable = false)]
-    public partial class ADDRESSOBJECTTYPES
+    public partial class ParamTypes
     {
 
-        private ADDRESSOBJECTTYPESADDRESSOBJECTTYPE[] aDDRESSOBJECTTYPEField;
+        private ParamTypesParamType[] pARAMTYPEField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ADDRESSOBJECTTYPE")]
-        public ADDRESSOBJECTTYPESADDRESSOBJECTTYPE[] ADDRESSOBJECTTYPE
+        [System.Xml.Serialization.XmlElementAttribute("PARAMTYPE")]
+        public ParamTypesParamType[] PARAMTYPE
         {
             get
             {
-                return this.aDDRESSOBJECTTYPEField;
+                return this.pARAMTYPEField;
             }
             set
             {
-                this.aDDRESSOBJECTTYPEField = value;
+                this.pARAMTYPEField = value;
             }
         }
     }
@@ -50,16 +50,14 @@ namespace AppForWorkingWithXML.Models.AS.ADDR.TYPES
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
-    public partial class ADDRESSOBJECTTYPESADDRESSOBJECTTYPE
+    public partial class ParamTypesParamType
     {
 
         private string idField;
 
-        private string lEVELField;
-
-        private string sHORTNAMEField;
-
         private string nAMEField;
+
+        private string cODEField;
 
         private string dESCField;
 
@@ -86,34 +84,6 @@ namespace AppForWorkingWithXML.Models.AS.ADDR.TYPES
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "integer")]
-        public string LEVEL
-        {
-            get
-            {
-                return this.lEVELField;
-            }
-            set
-            {
-                this.lEVELField = value;
-            }
-        }
-
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string SHORTNAME
-        {
-            get
-            {
-                return this.sHORTNAMEField;
-            }
-            set
-            {
-                this.sHORTNAMEField = value;
-            }
-        }
-
-        /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public string NAME
         {
@@ -124,6 +94,20 @@ namespace AppForWorkingWithXML.Models.AS.ADDR.TYPES
             set
             {
                 this.nAMEField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string CODE
+        {
+            get
+            {
+                return this.cODEField;
+            }
+            set
+            {
+                this.cODEField = value;
             }
         }
 

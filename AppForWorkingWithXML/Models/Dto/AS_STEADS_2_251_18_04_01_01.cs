@@ -16,7 +16,7 @@ using System.Xml.Serialization;
 
 
 /// <remarks/>
-namespace AppForWorkingWithXML.Models.AS.ADDR.OBJ
+namespace AppForWorkingWithXML.Models.Dto
 {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
     [System.SerializableAttribute()]
@@ -24,22 +24,22 @@ namespace AppForWorkingWithXML.Models.AS.ADDR.OBJ
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
     [System.Xml.Serialization.XmlRootAttribute(Namespace = "", IsNullable = false)]
-    public partial class ADDRESSOBJECTS
+    public partial class Steads
     {
 
-        private ADDRESSOBJECTSOBJECT[] oBJECTField;
+        private SteadsStead[] sTEADField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("OBJECT")]
-        public ADDRESSOBJECTSOBJECT[] OBJECT
+        [System.Xml.Serialization.XmlElementAttribute("STEAD")]
+        public SteadsStead[] STEAD
         {
             get
             {
-                return this.oBJECTField;
+                return this.sTEADField;
             }
             set
             {
-                this.oBJECTField = value;
+                this.sTEADField = value;
             }
         }
     }
@@ -50,32 +50,24 @@ namespace AppForWorkingWithXML.Models.AS.ADDR.OBJ
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
-    public partial class ADDRESSOBJECTSOBJECT
+    public partial class SteadsStead
     {
 
-        private long idField;
+        private string idField;
 
-        private long oBJECTIDField;
+        private string oBJECTIDField;
 
         private string oBJECTGUIDField;
 
-        private long cHANGEIDField;
+        private string cHANGEIDField;
 
-        private string nAMEField;
-
-        private string tYPENAMEField;
-
-        private string lEVELField;
+        private string nUMBERField;
 
         private string oPERTYPEIDField;
 
-        private long pREVIDField;
+        private string pREVIDField;
 
-        private bool pREVIDFieldSpecified;
-
-        private long nEXTIDField;
-
-        private bool nEXTIDFieldSpecified;
+        private string nEXTIDField;
 
         private System.DateTime uPDATEDATEField;
 
@@ -83,13 +75,13 @@ namespace AppForWorkingWithXML.Models.AS.ADDR.OBJ
 
         private System.DateTime eNDDATEField;
 
-        private ADDRESSOBJECTSOBJECTISACTUAL iSACTUALField;
+        private STEADSSTEADISACTUAL iSACTUALField;
 
-        private ADDRESSOBJECTSOBJECTISACTIVE iSACTIVEField;
+        private STEADSSTEADISACTIVE iSACTIVEField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public long ID
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "integer")]
+        public string ID
         {
             get
             {
@@ -102,8 +94,8 @@ namespace AppForWorkingWithXML.Models.AS.ADDR.OBJ
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public long OBJECTID
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "integer")]
+        public string OBJECTID
         {
             get
             {
@@ -130,8 +122,8 @@ namespace AppForWorkingWithXML.Models.AS.ADDR.OBJ
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public long CHANGEID
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "integer")]
+        public string CHANGEID
         {
             get
             {
@@ -145,48 +137,20 @@ namespace AppForWorkingWithXML.Models.AS.ADDR.OBJ
 
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string NAME
+        public string NUMBER
         {
             get
             {
-                return this.nAMEField;
+                return this.nUMBERField;
             }
             set
             {
-                this.nAMEField = value;
+                this.nUMBERField = value;
             }
         }
 
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string TYPENAME
-        {
-            get
-            {
-                return this.tYPENAMEField;
-            }
-            set
-            {
-                this.tYPENAMEField = value;
-            }
-        }
-
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string LEVEL
-        {
-            get
-            {
-                return this.lEVELField;
-            }
-            set
-            {
-                this.lEVELField = value;
-            }
-        }
-
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "integer")]
         public string OPERTYPEID
         {
             get
@@ -200,8 +164,8 @@ namespace AppForWorkingWithXML.Models.AS.ADDR.OBJ
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public long PREVID
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "integer")]
+        public string PREVID
         {
             get
             {
@@ -214,22 +178,8 @@ namespace AppForWorkingWithXML.Models.AS.ADDR.OBJ
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool PREVIDSpecified
-        {
-            get
-            {
-                return this.pREVIDFieldSpecified;
-            }
-            set
-            {
-                this.pREVIDFieldSpecified = value;
-            }
-        }
-
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public long NEXTID
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "integer")]
+        public string NEXTID
         {
             get
             {
@@ -238,20 +188,6 @@ namespace AppForWorkingWithXML.Models.AS.ADDR.OBJ
             set
             {
                 this.nEXTIDField = value;
-            }
-        }
-
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool NEXTIDSpecified
-        {
-            get
-            {
-                return this.nEXTIDFieldSpecified;
-            }
-            set
-            {
-                this.nEXTIDFieldSpecified = value;
             }
         }
 
@@ -299,7 +235,7 @@ namespace AppForWorkingWithXML.Models.AS.ADDR.OBJ
 
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public ADDRESSOBJECTSOBJECTISACTUAL ISACTUAL
+        public STEADSSTEADISACTUAL ISACTUAL
         {
             get
             {
@@ -313,7 +249,7 @@ namespace AppForWorkingWithXML.Models.AS.ADDR.OBJ
 
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public ADDRESSOBJECTSOBJECTISACTIVE ISACTIVE
+        public STEADSSTEADISACTIVE ISACTIVE
         {
             get
             {
@@ -330,7 +266,7 @@ namespace AppForWorkingWithXML.Models.AS.ADDR.OBJ
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
     [System.SerializableAttribute()]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
-    public enum ADDRESSOBJECTSOBJECTISACTUAL
+    public enum STEADSSTEADISACTUAL
     {
 
         /// <remarks/>
@@ -346,7 +282,7 @@ namespace AppForWorkingWithXML.Models.AS.ADDR.OBJ
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
     [System.SerializableAttribute()]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
-    public enum ADDRESSOBJECTSOBJECTISACTIVE
+    public enum STEADSSTEADISACTIVE
     {
 
         /// <remarks/>

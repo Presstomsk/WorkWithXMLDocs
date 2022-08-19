@@ -16,7 +16,7 @@ using System.Xml.Serialization;
 
 
 /// <remarks/>
-namespace AppForWorkingWithXML.Models.AS.MUN.HIERARCHY
+namespace AppForWorkingWithXML.Models.Dto
 {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
     [System.SerializableAttribute()]
@@ -24,22 +24,22 @@ namespace AppForWorkingWithXML.Models.AS.MUN.HIERARCHY
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
     [System.Xml.Serialization.XmlRootAttribute(Namespace = "", IsNullable = false)]
-    public partial class ITEMS
+    public partial class Rooms
     {
 
-        private ITEMSITEM[] iTEMField;
+        private RoomsRoom[] rOOMField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ITEM")]
-        public ITEMSITEM[] ITEM
+        [System.Xml.Serialization.XmlElementAttribute("ROOM")]
+        public RoomsRoom[] ROOM
         {
             get
             {
-                return this.iTEMField;
+                return this.rOOMField;
             }
             set
             {
-                this.iTEMField = value;
+                this.rOOMField = value;
             }
         }
     }
@@ -50,20 +50,22 @@ namespace AppForWorkingWithXML.Models.AS.MUN.HIERARCHY
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
-    public partial class ITEMSITEM
+    public partial class RoomsRoom
     {
 
         private long idField;
 
         private long oBJECTIDField;
 
-        private long pARENTOBJIDField;
-
-        private bool pARENTOBJIDFieldSpecified;
+        private string oBJECTGUIDField;
 
         private long cHANGEIDField;
 
-        private string oKTMOField;
+        private string nUMBERField;
+
+        private string rOOMTYPEField;
+
+        private string oPERTYPEIDField;
 
         private long pREVIDField;
 
@@ -79,9 +81,9 @@ namespace AppForWorkingWithXML.Models.AS.MUN.HIERARCHY
 
         private System.DateTime eNDDATEField;
 
-        private ITEMSITEMISACTIVE iSACTIVEField;
+        private ROOMSROOMISACTUAL iSACTUALField;
 
-        private string pATHField;
+        private ROOMSROOMISACTIVE iSACTIVEField;
 
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
@@ -113,29 +115,15 @@ namespace AppForWorkingWithXML.Models.AS.MUN.HIERARCHY
 
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public long PARENTOBJID
+        public string OBJECTGUID
         {
             get
             {
-                return this.pARENTOBJIDField;
+                return this.oBJECTGUIDField;
             }
             set
             {
-                this.pARENTOBJIDField = value;
-            }
-        }
-
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool PARENTOBJIDSpecified
-        {
-            get
-            {
-                return this.pARENTOBJIDFieldSpecified;
-            }
-            set
-            {
-                this.pARENTOBJIDFieldSpecified = value;
+                this.oBJECTGUIDField = value;
             }
         }
 
@@ -155,15 +143,43 @@ namespace AppForWorkingWithXML.Models.AS.MUN.HIERARCHY
 
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string OKTMO
+        public string NUMBER
         {
             get
             {
-                return this.oKTMOField;
+                return this.nUMBERField;
             }
             set
             {
-                this.oKTMOField = value;
+                this.nUMBERField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "integer")]
+        public string ROOMTYPE
+        {
+            get
+            {
+                return this.rOOMTYPEField;
+            }
+            set
+            {
+                this.rOOMTYPEField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "integer")]
+        public string OPERTYPEID
+        {
+            get
+            {
+                return this.oPERTYPEIDField;
+            }
+            set
+            {
+                this.oPERTYPEIDField = value;
             }
         }
 
@@ -267,7 +283,21 @@ namespace AppForWorkingWithXML.Models.AS.MUN.HIERARCHY
 
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public ITEMSITEMISACTIVE ISACTIVE
+        public ROOMSROOMISACTUAL ISACTUAL
+        {
+            get
+            {
+                return this.iSACTUALField;
+            }
+            set
+            {
+                this.iSACTUALField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public ROOMSROOMISACTIVE ISACTIVE
         {
             get
             {
@@ -278,27 +308,29 @@ namespace AppForWorkingWithXML.Models.AS.MUN.HIERARCHY
                 this.iSACTIVEField = value;
             }
         }
-
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string PATH
-        {
-            get
-            {
-                return this.pATHField;
-            }
-            set
-            {
-                this.pATHField = value;
-            }
-        }
     }
 
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
     [System.SerializableAttribute()]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
-    public enum ITEMSITEMISACTIVE
+    public enum ROOMSROOMISACTUAL
+    {
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlEnumAttribute("0")]
+        Item0,
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlEnumAttribute("1")]
+        Item1,
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    public enum ROOMSROOMISACTIVE
     {
 
         /// <remarks/>

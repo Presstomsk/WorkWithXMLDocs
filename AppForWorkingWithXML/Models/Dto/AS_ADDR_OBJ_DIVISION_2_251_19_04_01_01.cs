@@ -16,7 +16,7 @@ using System.Xml.Serialization;
 
 
 /// <remarks/>
-namespace AppForWorkingWithXML.Models.AS.NORMATIVE.DOCS.TYPES
+namespace AppForWorkingWithXML.Models.Dto
 {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
     [System.SerializableAttribute()]
@@ -24,22 +24,22 @@ namespace AppForWorkingWithXML.Models.AS.NORMATIVE.DOCS.TYPES
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
     [System.Xml.Serialization.XmlRootAttribute(Namespace = "", IsNullable = false)]
-    public partial class NDOCTYPES
+    public partial class AsAddrObjDivisionItems
     {
 
-        private NDOCTYPE[] nDOCTYPEField;
+        private AsAddrObjDivisionItemsItem[] iTEMField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("NDOCTYPE")]
-        public NDOCTYPE[] NDOCTYPE
+        [System.Xml.Serialization.XmlElementAttribute("ITEM")]
+        public AsAddrObjDivisionItemsItem[] ITEM
         {
             get
             {
-                return this.nDOCTYPEField;
+                return this.iTEMField;
             }
             set
             {
-                this.nDOCTYPEField = value;
+                this.iTEMField = value;
             }
         }
     }
@@ -50,21 +50,20 @@ namespace AppForWorkingWithXML.Models.AS.NORMATIVE.DOCS.TYPES
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace = "", IsNullable = false)]
-    public partial class NDOCTYPE
+    public partial class AsAddrObjDivisionItemsItem
     {
 
-        private string idField;
+        private long idField;
 
-        private string nAMEField;
+        private long pARENTIDField;
 
-        private System.DateTime sTARTDATEField;
+        private long cHILDIDField;
 
-        private System.DateTime eNDDATEField;
+        private long cHANGEIDField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "integer")]
-        public string ID
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public long ID
         {
             get
             {
@@ -78,43 +77,43 @@ namespace AppForWorkingWithXML.Models.AS.NORMATIVE.DOCS.TYPES
 
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string NAME
+        public long PARENTID
         {
             get
             {
-                return this.nAMEField;
+                return this.pARENTIDField;
             }
             set
             {
-                this.nAMEField = value;
+                this.pARENTIDField = value;
             }
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "date")]
-        public System.DateTime STARTDATE
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public long CHILDID
         {
             get
             {
-                return this.sTARTDATEField;
+                return this.cHILDIDField;
             }
             set
             {
-                this.sTARTDATEField = value;
+                this.cHILDIDField = value;
             }
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "date")]
-        public System.DateTime ENDDATE
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public long CHANGEID
         {
             get
             {
-                return this.eNDDATEField;
+                return this.cHANGEIDField;
             }
             set
             {
-                this.eNDDATEField = value;
+                this.cHANGEIDField = value;
             }
         }
     }

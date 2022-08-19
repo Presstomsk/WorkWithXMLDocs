@@ -16,7 +16,7 @@ using System.Xml.Serialization;
 
 
 /// <remarks/>
-namespace AppForWorkingWithXML.Models.AS.APARTMENTS
+namespace AppForWorkingWithXML.Models.Dto
 {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
     [System.SerializableAttribute()]
@@ -24,22 +24,22 @@ namespace AppForWorkingWithXML.Models.AS.APARTMENTS
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
     [System.Xml.Serialization.XmlRootAttribute(Namespace = "", IsNullable = false)]
-    public partial class APARTMENTS
+    public partial class ADDRESSOBJECTS
     {
 
-        private APARTMENTSAPARTMENT[] aPARTMENTField;
+        private ADDRESSOBJECTSOBJECT[] oBJECTField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("APARTMENT")]
-        public APARTMENTSAPARTMENT[] APARTMENT
+        [System.Xml.Serialization.XmlElementAttribute("OBJECT")]
+        public ADDRESSOBJECTSOBJECT[] OBJECT
         {
             get
             {
-                return this.aPARTMENTField;
+                return this.oBJECTField;
             }
             set
             {
-                this.aPARTMENTField = value;
+                this.oBJECTField = value;
             }
         }
     }
@@ -50,7 +50,7 @@ namespace AppForWorkingWithXML.Models.AS.APARTMENTS
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
-    public partial class APARTMENTSAPARTMENT
+    public partial class ADDRESSOBJECTSOBJECT
     {
 
         private long idField;
@@ -61,11 +61,13 @@ namespace AppForWorkingWithXML.Models.AS.APARTMENTS
 
         private long cHANGEIDField;
 
-        private string nUMBERField;
+        private string nAMEField;
 
-        private string aPARTTYPEField;
+        private string tYPENAMEField;
 
-        private long oPERTYPEIDField;
+        private string lEVELField;
+
+        private string oPERTYPEIDField;
 
         private long pREVIDField;
 
@@ -81,9 +83,9 @@ namespace AppForWorkingWithXML.Models.AS.APARTMENTS
 
         private System.DateTime eNDDATEField;
 
-        private APARTMENTSAPARTMENTISACTUAL iSACTUALField;
+        private ADDRESSOBJECTSOBJECTISACTUAL iSACTUALField;
 
-        private APARTMENTSAPARTMENTISACTIVE iSACTIVEField;
+        private ADDRESSOBJECTSOBJECTISACTIVE iSACTIVEField;
 
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
@@ -143,35 +145,49 @@ namespace AppForWorkingWithXML.Models.AS.APARTMENTS
 
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string NUMBER
+        public string NAME
         {
             get
             {
-                return this.nUMBERField;
+                return this.nAMEField;
             }
             set
             {
-                this.nUMBERField = value;
-            }
-        }
-
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "integer")]
-        public string APARTTYPE
-        {
-            get
-            {
-                return this.aPARTTYPEField;
-            }
-            set
-            {
-                this.aPARTTYPEField = value;
+                this.nAMEField = value;
             }
         }
 
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public long OPERTYPEID
+        public string TYPENAME
+        {
+            get
+            {
+                return this.tYPENAMEField;
+            }
+            set
+            {
+                this.tYPENAMEField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string LEVEL
+        {
+            get
+            {
+                return this.lEVELField;
+            }
+            set
+            {
+                this.lEVELField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "integer")]
+        public string OPERTYPEID
         {
             get
             {
@@ -283,7 +299,7 @@ namespace AppForWorkingWithXML.Models.AS.APARTMENTS
 
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public APARTMENTSAPARTMENTISACTUAL ISACTUAL
+        public ADDRESSOBJECTSOBJECTISACTUAL ISACTUAL
         {
             get
             {
@@ -297,7 +313,7 @@ namespace AppForWorkingWithXML.Models.AS.APARTMENTS
 
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public APARTMENTSAPARTMENTISACTIVE ISACTIVE
+        public ADDRESSOBJECTSOBJECTISACTIVE ISACTIVE
         {
             get
             {
@@ -314,7 +330,7 @@ namespace AppForWorkingWithXML.Models.AS.APARTMENTS
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
     [System.SerializableAttribute()]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
-    public enum APARTMENTSAPARTMENTISACTUAL
+    public enum ADDRESSOBJECTSOBJECTISACTUAL
     {
 
         /// <remarks/>
@@ -330,7 +346,7 @@ namespace AppForWorkingWithXML.Models.AS.APARTMENTS
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
     [System.SerializableAttribute()]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
-    public enum APARTMENTSAPARTMENTISACTIVE
+    public enum ADDRESSOBJECTSOBJECTISACTIVE
     {
 
         /// <remarks/>

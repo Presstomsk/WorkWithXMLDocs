@@ -12,7 +12,11 @@ namespace AppForWorkingWithXML
                         .AddJsonFile("appsettings.json")                 
                         .Build();
             var connString = config.GetConnectionString("MainDb");
+
             var contextFactory = new SqlContextFactory(connString);
+            using (var context = contextFactory.CreateDbContext())
+            { }
+            
         }
     }
 }

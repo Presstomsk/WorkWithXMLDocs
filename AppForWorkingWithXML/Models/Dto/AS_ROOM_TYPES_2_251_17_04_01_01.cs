@@ -16,30 +16,29 @@ using System.Xml.Serialization;
 
 
 /// <remarks/>
-namespace AppForWorkingWithXML.Models.AS.OBJECT.LEVELS
-{
+namespace AppForWorkingWithXML.Models.Dto
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
     [System.Xml.Serialization.XmlRootAttribute(Namespace = "", IsNullable = false)]
-    public partial class OBJECTLEVELS
+    public partial class RoomTypes
     {
 
-        private OBJECTLEVELSOBJECTLEVEL[] oBJECTLEVELField;
+        private RoomTypesRoomType[] rOOMTYPEField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("OBJECTLEVEL")]
-        public OBJECTLEVELSOBJECTLEVEL[] OBJECTLEVEL
+        [System.Xml.Serialization.XmlElementAttribute("ROOMTYPE")]
+        public RoomTypesRoomType[] ROOMTYPE
         {
             get
             {
-                return this.oBJECTLEVELField;
+                return this.rOOMTYPEField;
             }
             set
             {
-                this.oBJECTLEVELField = value;
+                this.rOOMTYPEField = value;
             }
         }
     }
@@ -50,14 +49,16 @@ namespace AppForWorkingWithXML.Models.AS.OBJECT.LEVELS
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
-    public partial class OBJECTLEVELSOBJECTLEVEL
+    public partial class RoomTypesRoomType
     {
 
-        private string lEVELField;
+        private string idField;
 
         private string nAMEField;
 
         private string sHORTNAMEField;
+
+        private string dESCField;
 
         private System.DateTime uPDATEDATEField;
 
@@ -69,15 +70,15 @@ namespace AppForWorkingWithXML.Models.AS.OBJECT.LEVELS
 
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType = "integer")]
-        public string LEVEL
+        public string ID
         {
             get
             {
-                return this.lEVELField;
+                return this.idField;
             }
             set
             {
-                this.lEVELField = value;
+                this.idField = value;
             }
         }
 
@@ -106,6 +107,20 @@ namespace AppForWorkingWithXML.Models.AS.OBJECT.LEVELS
             set
             {
                 this.sHORTNAMEField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string DESC
+        {
+            get
+            {
+                return this.dESCField;
+            }
+            set
+            {
+                this.dESCField = value;
             }
         }
 

@@ -16,7 +16,7 @@ using System.Xml.Serialization;
 
 
 /// <remarks/>
-namespace AppForWorkingWithXML.Models.AS.CHANGE.HISTORY
+namespace AppForWorkingWithXML.Models.Dto
 {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
     [System.SerializableAttribute()]
@@ -24,22 +24,22 @@ namespace AppForWorkingWithXML.Models.AS.CHANGE.HISTORY
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
     [System.Xml.Serialization.XmlRootAttribute(Namespace = "", IsNullable = false)]
-    public partial class ITEMS
+    public partial class ObjectLevels
     {
 
-        private ITEMSITEM[] iTEMField;
+        private ObjectLevelsObjectLevel[] oBJECTLEVELField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ITEM")]
-        public ITEMSITEM[] ITEM
+        [System.Xml.Serialization.XmlElementAttribute("OBJECTLEVEL")]
+        public ObjectLevelsObjectLevel[] OBJECTLEVEL
         {
             get
             {
-                return this.iTEMField;
+                return this.oBJECTLEVELField;
             }
             set
             {
-                this.iTEMField = value;
+                this.oBJECTLEVELField = value;
             }
         }
     }
@@ -50,118 +50,118 @@ namespace AppForWorkingWithXML.Models.AS.CHANGE.HISTORY
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
-    public partial class ITEMSITEM
+    public partial class ObjectLevelsObjectLevel
     {
 
-        private long cHANGEIDField;
+        private string lEVELField;
 
-        private long oBJECTIDField;
+        private string nAMEField;
 
-        private string aDROBJECTIDField;
+        private string sHORTNAMEField;
 
-        private string oPERTYPEIDField;
+        private System.DateTime uPDATEDATEField;
 
-        private long nDOCIDField;
+        private System.DateTime sTARTDATEField;
 
-        private bool nDOCIDFieldSpecified;
+        private System.DateTime eNDDATEField;
 
-        private System.DateTime cHANGEDATEField;
-
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public long CHANGEID
-        {
-            get
-            {
-                return this.cHANGEIDField;
-            }
-            set
-            {
-                this.cHANGEIDField = value;
-            }
-        }
-
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public long OBJECTID
-        {
-            get
-            {
-                return this.oBJECTIDField;
-            }
-            set
-            {
-                this.oBJECTIDField = value;
-            }
-        }
-
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string ADROBJECTID
-        {
-            get
-            {
-                return this.aDROBJECTIDField;
-            }
-            set
-            {
-                this.aDROBJECTIDField = value;
-            }
-        }
+        private bool iSACTIVEField;
 
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType = "integer")]
-        public string OPERTYPEID
+        public string LEVEL
         {
             get
             {
-                return this.oPERTYPEIDField;
+                return this.lEVELField;
             }
             set
             {
-                this.oPERTYPEIDField = value;
+                this.lEVELField = value;
             }
         }
 
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public long NDOCID
+        public string NAME
         {
             get
             {
-                return this.nDOCIDField;
+                return this.nAMEField;
             }
             set
             {
-                this.nDOCIDField = value;
+                this.nAMEField = value;
             }
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool NDOCIDSpecified
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string SHORTNAME
         {
             get
             {
-                return this.nDOCIDFieldSpecified;
+                return this.sHORTNAMEField;
             }
             set
             {
-                this.nDOCIDFieldSpecified = value;
+                this.sHORTNAMEField = value;
             }
         }
 
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType = "date")]
-        public System.DateTime CHANGEDATE
+        public System.DateTime UPDATEDATE
         {
             get
             {
-                return this.cHANGEDATEField;
+                return this.uPDATEDATEField;
             }
             set
             {
-                this.cHANGEDATEField = value;
+                this.uPDATEDATEField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "date")]
+        public System.DateTime STARTDATE
+        {
+            get
+            {
+                return this.sTARTDATEField;
+            }
+            set
+            {
+                this.sTARTDATEField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "date")]
+        public System.DateTime ENDDATE
+        {
+            get
+            {
+                return this.eNDDATEField;
+            }
+            set
+            {
+                this.eNDDATEField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public bool ISACTIVE
+        {
+            get
+            {
+                return this.iSACTIVEField;
+            }
+            set
+            {
+                this.iSACTIVEField = value;
             }
         }
     }
