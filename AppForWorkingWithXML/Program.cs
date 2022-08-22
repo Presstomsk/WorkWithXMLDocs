@@ -1,4 +1,5 @@
 ﻿using AppForWorkingWithXML.DB;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using System;
 
@@ -8,14 +9,9 @@ namespace AppForWorkingWithXML
     {
         static void Main(string[] args)
         {
-            var config = new ConfigurationBuilder()
-                        .AddJsonFile("appsettings.json")                 
-                        .Build();
-            var connString = config.GetConnectionString("MainDb");
-
-            var contextFactory = new SqlContextFactory(connString);
-            using (var context = contextFactory.CreateDbContext())
-            { }
+            
+            MainContext context = new MainContext();
+            context.Database.Migrate();             
             
         }
     }
