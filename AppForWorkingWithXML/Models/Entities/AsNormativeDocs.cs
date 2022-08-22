@@ -14,14 +14,14 @@ namespace AppForWorkingWithXML.Models.Entities
         public string Name { get; set; }        
         public DateTime Date { get; set; }        
         public string Number { get; set; }        
-        public string Type { get; set; }       
-        public string Kind { get; set; }       
+        public int Type { get; set; }       
+        public int Kind { get; set; }       
         public DateTime UpdateDate { get; set; }       
         public string OrgName { get; set; }       
         public string RegNum { get; set; }       
-        public DateTime RegDate { get; set; }        
+        public DateTime? RegDate { get; set; }        
         public bool RegDateSpecified { get; set; }        
-        public DateTime AccDate { get; set; }        
+        public DateTime? AccDate { get; set; }        
         public bool AccDateSpecified { get; set; }       
         public string Comment { get; set; }
         

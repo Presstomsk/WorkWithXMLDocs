@@ -13,9 +13,9 @@ namespace AppForWorkingWithXML.Models.Entities
         public long ObjectId { get; set; }        
         public DateTime CreateDate { get; set; }        
         public long ChangeId { get; set; }        
-        public string LevelId { get; set; }       
+        public int LevelId { get; set; }       
         public DateTime UpdateDate { get; set; }       
-        public string ObjectGuid { get; set; }       
+        public Guid ObjectGuid { get; set; }       
         public ReestrObjectsObjectIsActive IsActive { get; set; }        
     }
     public enum ReestrObjectsObjectIsActive

@@ -12,10 +12,10 @@ namespace AppForWorkingWithXML.Models.Entities
     {
         public long Id { get; set; }
         public long ObjectId { get; set; }       
-        public long ChangeId { get; set; }       
+        public long? ChangeId { get; set; }       
         public bool ChangeIdSpecified { get; set; }       
         public long ChangeIdEnd { get; set; }       
-        public string TypeId { get; set; }       
+        public int TypeId { get; set; }       
         public string Value { get; set; }       
         public DateTime UpdateDate { get; set; }        
         public DateTime StartDate { get; set; }        

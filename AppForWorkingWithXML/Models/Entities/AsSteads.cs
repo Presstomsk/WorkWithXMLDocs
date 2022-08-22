@@ -10,14 +10,14 @@ namespace AppForWorkingWithXML.Models.Entities
     }
     public class SteadsStead
     {
-        public int Id { get; set; }        
-        public string ObjectId { get; set; }        
-        public string ObjectGuid { get; set; }        
-        public string ChangeId { get; set; }        
+        public long Id { get; set; }        
+        public long ObjectId { get; set; }        
+        public Guid ObjectGuid { get; set; }        
+        public long ChangeId { get; set; }        
         public string Number { get; set; }       
-        public string OperTypeId { get; set; }       
-        public string PrevId { get; set; }       
-        public string NextId { get; set; }       
+        public int OperTypeId { get; set; }       
+        public long? PrevId { get; set; }       
+        public long? NextId { get; set; }       
         public DateTime UpdateDate { get; set; }        
         public DateTime StartDate { get; set; }        
         public DateTime EndDate { get; set; }        

@@ -12,18 +12,18 @@ namespace AppForWorkingWithXML.Models.Entities
     {
         public long Id { get; set; }
         public long ObjectId { get; set; }
-        public string ObjectGuid { get; set; }       
+        public Guid ObjectGuid { get; set; }       
         public long ChangeId { get; set; }       
         public string HouseNum { get; set; }      
         public string AddNum1 { get; set; }       
         public string AddNum2 { get; set; }       
-        public string HouseType { get; set; }       
-        public string AddType1 { get; set; }      
-        public string AddType2  { get; set; }       
-        public string OperTypeId { get; set; }        
-        public long PrevId { get; set; }       
+        public int? HouseType { get; set; }       
+        public int? AddType1 { get; set; }      
+        public int? AddType2  { get; set; }       
+        public int OperTypeId { get; set; }        
+        public long? PrevId { get; set; }       
         public bool PrevIdSpecified { get; set; }        
-        public long NextId { get; set; }        
+        public long? NextId { get; set; }        
         public bool NextIdSpecified { get; set; }        
         public DateTime UpdateDate { get; set; }      
         public DateTime StartDate { get; set; }        

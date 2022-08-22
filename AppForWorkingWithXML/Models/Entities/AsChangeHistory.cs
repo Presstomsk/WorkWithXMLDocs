@@ -12,9 +12,9 @@ namespace AppForWorkingWithXML.Models.Entities
     {
         public long ChangeId { get; set; }
         public long ObjectId { get; set; }
-        public string AdrObjectId { get; set; }
-        public string OperTypeId { get; set; }       
-        public long NDocId { get; set; }       
+        public Guid AdrObjectId { get; set; }
+        public int OperTypeId { get; set; }       
+        public long? NDocId { get; set; }       
         public bool NDocIdSpecified { get; set; }      
         public DateTime ChangeDate { get; set; }      
     }
