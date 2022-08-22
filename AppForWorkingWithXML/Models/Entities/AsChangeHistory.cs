@@ -10,6 +10,7 @@ namespace AppForWorkingWithXML.Models.Entities
     }
     public class AsChangeHistoryItemsItem
     {
+        public long Id { get; set; }
         public long ChangeId { get; set; }
         public long ObjectId { get; set; }
         public Guid AdrObjectId { get; set; }
