@@ -10,6 +10,7 @@ namespace AppForWorkingWithXML.Models.Entities
     }
     public class ObjectLevelsObjectLevel
     {
+        public long Id { get; set; }
         public int Level { get; set; }        
         public string Name { get; set; }       
         public string ShortName { get; set; }        
