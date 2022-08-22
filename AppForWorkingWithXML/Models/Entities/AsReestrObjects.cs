@@ -10,6 +10,7 @@ namespace AppForWorkingWithXML.Models.Entities
     }
     public class ReestrObjectsObject
     {
+        public long Id { get; set; }
         public long ObjectId { get; set; }        
         public DateTime CreateDate { get; set; }        
         public long ChangeId { get; set; }        
