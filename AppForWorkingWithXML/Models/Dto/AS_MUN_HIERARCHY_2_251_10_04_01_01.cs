@@ -79,7 +79,7 @@ namespace AppForWorkingWithXML.Models.Dto
 
         private System.DateTime eNDDATEField;
 
-        private ITEMSITEMISACTIVE iSACTIVEField;
+        private AsMunHierarchyItemsIsActive iSACTIVEField;
 
         private string pATHField;
 
@@ -267,7 +267,7 @@ namespace AppForWorkingWithXML.Models.Dto
 
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public ITEMSITEMISACTIVE ISACTIVE
+        public AsMunHierarchyItemsIsActive ISACTIVE
         {
             get
             {
@@ -298,7 +298,7 @@ namespace AppForWorkingWithXML.Models.Dto
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
     [System.SerializableAttribute()]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
-    public enum ITEMSITEMISACTIVE
+    public enum AsMunHierarchyItemsIsActive
     {
 
         /// <remarks/>

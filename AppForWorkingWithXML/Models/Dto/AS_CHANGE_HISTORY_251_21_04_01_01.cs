@@ -24,14 +24,14 @@ namespace AppForWorkingWithXML.Models.Dto
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
     [System.Xml.Serialization.XmlRootAttribute(Namespace = "", IsNullable = false)]
-    public partial class AsChangeHistoryItemsDto
+    public partial class AsChangeHistoryItems
     {
 
-        private AsChangeHistoryItemsItemDto[] iTEMField;
+        private AsChangeHistoryItemsItem[] iTEMField;
 
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute("ITEM")]
-        public AsChangeHistoryItemsItemDto[] ITEM
+        public AsChangeHistoryItemsItem[] ITEM
         {
             get
             {
@@ -50,7 +50,7 @@ namespace AppForWorkingWithXML.Models.Dto
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
-    public partial class AsChangeHistoryItemsItemDto
+    public partial class AsChangeHistoryItemsItem
     {
 
         private long cHANGEIDField;

@@ -17,6 +17,7 @@ using System.Xml.Serialization;
 
 /// <remarks/>
 namespace AppForWorkingWithXML.Models.Dto
+{ 
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
