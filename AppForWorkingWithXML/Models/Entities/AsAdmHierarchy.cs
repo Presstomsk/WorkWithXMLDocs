@@ -22,7 +22,7 @@ namespace AppForWorkingWithXML.Models.Entities
         public string PlanCode { get; set; } 
         public string StreetCode { get; set; }       
         public long? PrevId { get; set; }        
-        public bool revIdSpecified { get; set; }        
+        public bool PrevIdSpecified { get; set; }        
         public long? NextId  { get; set; }        
         public bool NextIdSpecified { get; set; }        
         public DateTime UpdateDate { get; set; }       
