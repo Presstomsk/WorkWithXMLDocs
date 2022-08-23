@@ -11,8 +11,7 @@ namespace AppForWorkingWithXML.Migrations
                 name: "AddressObjects",
                 columns: table => new
                 {
-                    Id = table.Column<long>(nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Id = table.Column<long>(nullable: false),
                     ObjectId = table.Column<long>(nullable: false),
                     ObjectGuid = table.Column<Guid>(nullable: false),
                     ChangeId = table.Column<long>(nullable: false),
@@ -133,7 +132,7 @@ namespace AppForWorkingWithXML.Migrations
                     PlanCode = table.Column<string>(nullable: true),
                     StreetCode = table.Column<string>(nullable: true),
                     PrevId = table.Column<long>(nullable: true),
-                    revIdSpecified = table.Column<bool>(nullable: false),
+                    PrevIdSpecified = table.Column<bool>(nullable: false),
                     NextId = table.Column<long>(nullable: true),
                     NextIdSpecified = table.Column<bool>(nullable: false),
                     UpdateDate = table.Column<DateTime>(nullable: false),

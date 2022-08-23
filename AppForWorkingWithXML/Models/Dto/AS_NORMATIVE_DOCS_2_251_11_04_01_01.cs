@@ -24,14 +24,14 @@ namespace AppForWorkingWithXML.Models.Dto
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
     [System.Xml.Serialization.XmlRootAttribute(Namespace = "", IsNullable = false)]
-    public partial class NormativeDocs
+    public partial class NORMDOCS
     {
 
-        private NormativeDocsNormativeDoc[] nORMDOCField;
+        private NORMDOC[] nORMDOCField;
 
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute("NORMDOC")]
-        public NormativeDocsNormativeDoc[] NORMDOC
+        public NORMDOC[] NORMDOC
         {
             get
             {
@@ -50,7 +50,7 @@ namespace AppForWorkingWithXML.Models.Dto
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
-    public partial class NormativeDocsNormativeDoc
+    public partial class NORMDOC
     {
 
         private long idField;

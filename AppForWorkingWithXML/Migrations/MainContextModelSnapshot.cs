@@ -58,9 +58,7 @@ namespace AppForWorkingWithXML.Migrations
             modelBuilder.Entity("AppForWorkingWithXML.Models.Entities.AddressObjectsObject", b =>
                 {
                     b.Property<long>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("bigint")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                        .HasColumnType("bigint");
 
                     b.Property<long>("ChangeId")
                         .HasColumnType("bigint");
@@ -275,6 +273,9 @@ namespace AppForWorkingWithXML.Migrations
                     b.Property<long?>("PrevId")
                         .HasColumnType("bigint");
 
+                    b.Property<bool>("PrevIdSpecified")
+                        .HasColumnType("bit");
+
                     b.Property<string>("RegionCode")
                         .HasColumnType("nvarchar(max)");
 
@@ -286,9 +287,6 @@ namespace AppForWorkingWithXML.Migrations
 
                     b.Property<DateTime>("UpdateDate")
                         .HasColumnType("datetime2");
-
-                    b.Property<bool>("revIdSpecified")
-                        .HasColumnType("bit");
 
                     b.HasKey("Id");
 

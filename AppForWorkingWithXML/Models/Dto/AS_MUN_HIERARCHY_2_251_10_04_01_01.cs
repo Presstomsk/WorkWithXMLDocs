@@ -16,7 +16,7 @@ using System.Xml.Serialization;
 
 
 /// <remarks/>
-namespace AppForWorkingWithXML.Models.Dto
+namespace AppForWorkingWithXML.Models.Dto.AsMunHierarchy
 {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
     [System.SerializableAttribute()]
@@ -24,14 +24,14 @@ namespace AppForWorkingWithXML.Models.Dto
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
     [System.Xml.Serialization.XmlRootAttribute(Namespace = "", IsNullable = false)]
-    public partial class AsMunHierarchyItems
+    public partial class ITEMS
     {
 
-        private AsMunHierarchyItemsItem[] iTEMField;
+        private ITEM[] iTEMField;
 
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute("ITEM")]
-        public AsMunHierarchyItemsItem[] ITEM
+        public ITEM[] ITEM
         {
             get
             {
@@ -50,7 +50,7 @@ namespace AppForWorkingWithXML.Models.Dto
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
-    public partial class AsMunHierarchyItemsItem
+    public partial class ITEM
     {
 
         private long idField;

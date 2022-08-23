@@ -24,14 +24,14 @@ namespace AppForWorkingWithXML.Models.Dto
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
     [System.Xml.Serialization.XmlRootAttribute(Namespace = "", IsNullable = false)]
-    public partial class ReestrObjects
+    public partial class REESTR_OBJECTS
     {
 
-        private ReestrObjectsObject[] oBJECTField;
+        private OBJECT[] oBJECTField;
 
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute("OBJECT")]
-        public ReestrObjectsObject[] OBJECT
+        public OBJECT[] OBJECT
         {
             get
             {
@@ -50,7 +50,7 @@ namespace AppForWorkingWithXML.Models.Dto
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
-    public partial class ReestrObjectsObject
+    public partial class OBJECT
     {
 
         private long oBJECTIDField;

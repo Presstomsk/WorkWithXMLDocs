@@ -14,7 +14,7 @@ using System.Xml.Serialization;
 // Этот исходный код был создан с помощью xsd, версия=4.8.3928.0.
 // 
 
-namespace AppForWorkingWithXML.Models.Dto
+namespace AppForWorkingWithXML.Models.Dto.AsAdmHierarchy
 {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
     [System.SerializableAttribute()]
@@ -22,14 +22,14 @@ namespace AppForWorkingWithXML.Models.Dto
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
     [System.Xml.Serialization.XmlRootAttribute(Namespace = "", IsNullable = false)]
-    public partial class AsAdmHierarchyItem
+    public partial class ITEMS
     {
 
-        private AsAdmHierarchyItemsItem[] iTEMField;
+        private ITEM[] iTEMField;
 
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute("ITEM")]
-        public AsAdmHierarchyItemsItem[] ITEM
+        public ITEM[] ITEM
         {
             get
             {
@@ -48,7 +48,7 @@ namespace AppForWorkingWithXML.Models.Dto
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
-    public partial class AsAdmHierarchyItemsItem
+    public partial class ITEM
     {
 
         private long idField;

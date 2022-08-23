@@ -24,14 +24,14 @@ namespace AppForWorkingWithXML.Models.Dto
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
     [System.Xml.Serialization.XmlRootAttribute(Namespace = "", IsNullable = false)]
-    public partial class NormativeDocsTypes
+    public partial class NDOCTYPES
     {
 
-        private NormativeDocsType[] nDOCTYPEField;
+        private NDOCTYPE[] nDOCTYPEField;
 
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute("NDOCTYPE")]
-        public NormativeDocsType[] NDOCTYPE
+        public NDOCTYPE[] NDOCTYPE
         {
             get
             {
@@ -51,7 +51,7 @@ namespace AppForWorkingWithXML.Models.Dto
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
     [System.Xml.Serialization.XmlRootAttribute(Namespace = "", IsNullable = false)]
-    public partial class NormativeDocsType
+    public partial class NDOCTYPE
     {
 
         private string idField;

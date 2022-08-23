@@ -1,5 +1,5 @@
 ﻿using System;
-
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace AppForWorkingWithXML.Models.Entities
 {
@@ -9,6 +9,7 @@ namespace AppForWorkingWithXML.Models.Entities
      }
     public class AddressObjectsObject
     {
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public long Id { get; set; }
         public long ObjectId { get; set; }
         public Guid ObjectGuid { get; set; }

@@ -7,7 +7,7 @@ namespace AppForWorkingWithXML
     {
         public MappingProfile()
         {
-            CreateMap<Models.Entities.AddressObjectsObject, Models.Dto.AddressObjectsObject>().ReverseMap()
+            CreateMap<Models.Entities.AddressObjectsObject, Models.Dto.ADDRESSOBJECTSOBJECT>().ReverseMap()
                  .ForMember(nameof(Models.Entities.AddressObjectsObject.Id), opt => opt.MapFrom(n => n.ID))
                  .ForMember(nameof(Models.Entities.AddressObjectsObject.ObjectId), opt => opt.MapFrom(n => n.OBJECTID))
                  .ForMember(nameof(Models.Entities.AddressObjectsObject.ObjectGuid), opt => opt.MapFrom(n => n.OBJECTGUID))

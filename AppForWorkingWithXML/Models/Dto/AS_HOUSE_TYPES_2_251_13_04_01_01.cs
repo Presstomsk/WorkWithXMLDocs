@@ -24,14 +24,14 @@ namespace AppForWorkingWithXML.Models.Dto
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
     [System.Xml.Serialization.XmlRootAttribute(Namespace = "", IsNullable = false)]
-    public partial class HouseTypes
+    public partial class HOUSETYPES
     {
 
-        private HouseTypesHouseType[] hOUSETYPEField;
+        private HOUSETYPE[] hOUSETYPEField;
 
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute("HOUSETYPE")]
-        public HouseTypesHouseType[] HOUSETYPE
+        public HOUSETYPE[] HOUSETYPE
         {
             get
             {
@@ -50,7 +50,7 @@ namespace AppForWorkingWithXML.Models.Dto
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
-    public partial class HouseTypesHouseType
+    public partial class HOUSETYPE
     {
 
         private string idField;

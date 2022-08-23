@@ -24,14 +24,14 @@ namespace AppForWorkingWithXML.Models.Dto
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
     [System.Xml.Serialization.XmlRootAttribute(Namespace = "", IsNullable = false)]
-    public partial class OperationTypes
+    public partial class OPERATIONTYPES
     {
 
-        private OperationTypesOperationType[] oPERATIONTYPEField;
+        private OPERATIONTYPE[] oPERATIONTYPEField;
 
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute("OPERATIONTYPE")]
-        public OperationTypesOperationType[] OPERATIONTYPE
+        public OPERATIONTYPE[] OPERATIONTYPE
         {
             get
             {
@@ -50,7 +50,7 @@ namespace AppForWorkingWithXML.Models.Dto
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
-    public partial class OperationTypesOperationType
+    public partial class OPERATIONTYPE
     {
 
         private string idField;

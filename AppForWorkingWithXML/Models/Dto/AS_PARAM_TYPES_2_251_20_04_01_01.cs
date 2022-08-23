@@ -24,14 +24,14 @@ namespace AppForWorkingWithXML.Models.Dto
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
     [System.Xml.Serialization.XmlRootAttribute(Namespace = "", IsNullable = false)]
-    public partial class ParamTypes
+    public partial class PARAMTYPES
     {
 
-        private ParamTypesParamType[] pARAMTYPEField;
+        private PARAMTYPE[] pARAMTYPEField;
 
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute("PARAMTYPE")]
-        public ParamTypesParamType[] PARAMTYPE
+        public PARAMTYPE[] PARAMTYPE
         {
             get
             {
@@ -50,7 +50,7 @@ namespace AppForWorkingWithXML.Models.Dto
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
-    public partial class ParamTypesParamType
+    public partial class PARAMTYPE
     {
 
         private string idField;

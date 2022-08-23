@@ -24,14 +24,14 @@ namespace AppForWorkingWithXML.Models.Dto
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
     [System.Xml.Serialization.XmlRootAttribute(Namespace = "", IsNullable = false)]
-    public partial class Steads
+    public partial class STEADS
     {
 
-        private SteadsStead[] sTEADField;
+        private STEAD[] sTEADField;
 
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute("STEAD")]
-        public SteadsStead[] STEAD
+        public STEAD[] STEAD
         {
             get
             {
@@ -50,7 +50,7 @@ namespace AppForWorkingWithXML.Models.Dto
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
-    public partial class SteadsStead
+    public partial class STEAD
     {
 
         private string idField;

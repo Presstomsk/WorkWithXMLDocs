@@ -25,14 +25,14 @@ namespace AppForWorkingWithXML.Models.Dto
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
     [System.Xml.Serialization.XmlRootAttribute(Namespace = "", IsNullable = false)]
-    public partial class Carplaces
+    public partial class CARPLACES
     {
 
-        private CarplacesCarplace[] cARPLACEField;
+        private CARPLACE[] cARPLACEField;
 
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute("CARPLACE")]
-        public CarplacesCarplace[] CARPLACE
+        public CARPLACE[] CARPLACE
         {
             get
             {
@@ -51,7 +51,7 @@ namespace AppForWorkingWithXML.Models.Dto
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
-    public partial class CarplacesCarplace
+    public partial class CARPLACE
     {
 
         private long idField;

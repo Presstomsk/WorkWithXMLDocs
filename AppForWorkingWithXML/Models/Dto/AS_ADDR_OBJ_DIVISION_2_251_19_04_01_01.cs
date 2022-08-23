@@ -24,14 +24,14 @@ namespace AppForWorkingWithXML.Models.Dto
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
     [System.Xml.Serialization.XmlRootAttribute(Namespace = "", IsNullable = false)]
-    public partial class AsAddrObjDivisionItems
+    public partial class ITEMS
     {
 
-        private AsAddrObjDivisionItemsItem[] iTEMField;
+        private ITEM[] iTEMField;
 
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute("ITEM")]
-        public AsAddrObjDivisionItemsItem[] ITEM
+        public ITEM[] ITEM
         {
             get
             {
@@ -50,7 +50,7 @@ namespace AppForWorkingWithXML.Models.Dto
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
-    public partial class AsAddrObjDivisionItemsItem
+    public partial class ITEM
     {
 
         private long idField;

@@ -24,14 +24,14 @@ namespace AppForWorkingWithXML.Models.Dto
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
     [System.Xml.Serialization.XmlRootAttribute(Namespace = "", IsNullable = false)]
-    public partial class RoomTypes
+    public partial class ROOMTYPES
     {
 
-        private RoomTypesRoomType[] rOOMTYPEField;
+        private ROOMTYPE[] rOOMTYPEField;
 
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute("ROOMTYPE")]
-        public RoomTypesRoomType[] ROOMTYPE
+        public ROOMTYPE[] ROOMTYPE
         {
             get
             {
@@ -50,7 +50,7 @@ namespace AppForWorkingWithXML.Models.Dto
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
-    public partial class RoomTypesRoomType
+    public partial class ROOMTYPE
     {
 
         private string idField;

@@ -24,14 +24,14 @@ namespace AppForWorkingWithXML.Models.Dto
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
     [System.Xml.Serialization.XmlRootAttribute(Namespace = "", IsNullable = false)]
-    public partial class ObjectLevels
+    public partial class OBJECTLEVELS
     {
 
-        private ObjectLevelsObjectLevel[] oBJECTLEVELField;
+        private OBJECTLEVEL[] oBJECTLEVELField;
 
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute("OBJECTLEVEL")]
-        public ObjectLevelsObjectLevel[] OBJECTLEVEL
+        public OBJECTLEVEL[] OBJECTLEVEL
         {
             get
             {
@@ -50,7 +50,7 @@ namespace AppForWorkingWithXML.Models.Dto
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
-    public partial class ObjectLevelsObjectLevel
+    public partial class OBJECTLEVEL
     {
 
         private string lEVELField;

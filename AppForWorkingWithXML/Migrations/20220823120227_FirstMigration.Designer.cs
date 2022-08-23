@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AppForWorkingWithXML.Migrations
 {
     [DbContext(typeof(MainContext))]
-    [Migration("20220822125414_FirstMigration")]
+    [Migration("20220823120227_FirstMigration")]
     partial class FirstMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -60,9 +60,7 @@ namespace AppForWorkingWithXML.Migrations
             modelBuilder.Entity("AppForWorkingWithXML.Models.Entities.AddressObjectsObject", b =>
                 {
                     b.Property<long>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("bigint")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                        .HasColumnType("bigint");
 
                     b.Property<long>("ChangeId")
                         .HasColumnType("bigint");
@@ -277,6 +275,9 @@ namespace AppForWorkingWithXML.Migrations
                     b.Property<long?>("PrevId")
                         .HasColumnType("bigint");
 
+                    b.Property<bool>("PrevIdSpecified")
+                        .HasColumnType("bit");
+
                     b.Property<string>("RegionCode")
                         .HasColumnType("nvarchar(max)");
 
@@ -288,9 +289,6 @@ namespace AppForWorkingWithXML.Migrations
 
                     b.Property<DateTime>("UpdateDate")
                         .HasColumnType("datetime2");
-
-                    b.Property<bool>("revIdSpecified")
-                        .HasColumnType("bit");
 
                     b.HasKey("Id");
 
