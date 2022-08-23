@@ -38,8 +38,7 @@ namespace AppForWorkingWithXML.Migrations
                 name: "AddressObjectTypes",
                 columns: table => new
                 {
-                    Id = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Id = table.Column<int>(nullable: false),
                     Level = table.Column<int>(nullable: false),
                     ShortName = table.Column<string>(nullable: true),
                     Name = table.Column<string>(nullable: true),
@@ -58,8 +57,7 @@ namespace AppForWorkingWithXML.Migrations
                 name: "Apartments",
                 columns: table => new
                 {
-                    Id = table.Column<long>(nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Id = table.Column<long>(nullable: false),
                     ObjectId = table.Column<long>(nullable: false),
                     ObjectGuid = table.Column<Guid>(nullable: false),
                     ChangeId = table.Column<long>(nullable: false),
@@ -85,8 +83,7 @@ namespace AppForWorkingWithXML.Migrations
                 name: "ApartmentTypes",
                 columns: table => new
                 {
-                    Id = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Id = table.Column<int>(nullable: false),
                     Name = table.Column<string>(nullable: true),
                     ShortName = table.Column<string>(nullable: true),
                     Desc = table.Column<string>(nullable: true),
@@ -104,8 +101,7 @@ namespace AppForWorkingWithXML.Migrations
                 name: "AsAddrObjDivisionItems",
                 columns: table => new
                 {
-                    Id = table.Column<long>(nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Id = table.Column<long>(nullable: false),
                     ParentId = table.Column<long>(nullable: false),
                     ChildId = table.Column<long>(nullable: false),
                     ChangeId = table.Column<long>(nullable: false)
@@ -119,8 +115,7 @@ namespace AppForWorkingWithXML.Migrations
                 name: "AsAdmHierarchyItems",
                 columns: table => new
                 {
-                    Id = table.Column<long>(nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Id = table.Column<long>(nullable: false),
                     ObjectId = table.Column<long>(nullable: false),
                     ParentObjId = table.Column<long>(nullable: true),
                     ParentObjIdSpecified = table.Column<bool>(nullable: false),
@@ -169,8 +164,7 @@ namespace AppForWorkingWithXML.Migrations
                 name: "AsMunHierarchyItems",
                 columns: table => new
                 {
-                    Id = table.Column<long>(nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Id = table.Column<long>(nullable: false),
                     ObjectId = table.Column<long>(nullable: false),
                     ParentObjId = table.Column<long>(nullable: true),
                     ParentObjIdSpecified = table.Column<bool>(nullable: false),
@@ -195,8 +189,7 @@ namespace AppForWorkingWithXML.Migrations
                 name: "Carplaces",
                 columns: table => new
                 {
-                    Id = table.Column<long>(nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Id = table.Column<long>(nullable: false),
                     ObjectId = table.Column<long>(nullable: false),
                     ObjectGuid = table.Column<Guid>(nullable: false),
                     ChangeId = table.Column<long>(nullable: false),
@@ -221,8 +214,7 @@ namespace AppForWorkingWithXML.Migrations
                 name: "Houses",
                 columns: table => new
                 {
-                    Id = table.Column<long>(nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Id = table.Column<long>(nullable: false),
                     ObjectId = table.Column<long>(nullable: false),
                     ObjectGuid = table.Column<Guid>(nullable: false),
                     ChangeId = table.Column<long>(nullable: false),
@@ -252,8 +244,7 @@ namespace AppForWorkingWithXML.Migrations
                 name: "HouseTypes",
                 columns: table => new
                 {
-                    Id = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Id = table.Column<int>(nullable: false),
                     Name = table.Column<string>(nullable: true),
                     ShortName = table.Column<string>(nullable: true),
                     Desc = table.Column<string>(nullable: true),
@@ -271,8 +262,7 @@ namespace AppForWorkingWithXML.Migrations
                 name: "NormativeDocs",
                 columns: table => new
                 {
-                    Id = table.Column<long>(nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Id = table.Column<long>(nullable: false),
                     Name = table.Column<string>(nullable: true),
                     Date = table.Column<DateTime>(nullable: false),
                     Number = table.Column<string>(nullable: true),
@@ -296,8 +286,7 @@ namespace AppForWorkingWithXML.Migrations
                 name: "NormativeDocsKinds",
                 columns: table => new
                 {
-                    Id = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Id = table.Column<int>(nullable: false),
                     Name = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
@@ -309,8 +298,7 @@ namespace AppForWorkingWithXML.Migrations
                 name: "NormativeDocsTypes",
                 columns: table => new
                 {
-                    Id = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Id = table.Column<int>(nullable: false),
                     Name = table.Column<string>(nullable: true),
                     StartDate = table.Column<DateTime>(nullable: false),
                     EndDate = table.Column<DateTime>(nullable: false)
@@ -343,8 +331,7 @@ namespace AppForWorkingWithXML.Migrations
                 name: "OperationTypes",
                 columns: table => new
                 {
-                    Id = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Id = table.Column<int>(nullable: false),
                     Name = table.Column<string>(nullable: true),
                     ShortName = table.Column<string>(nullable: true),
                     Desc = table.Column<string>(nullable: true),
@@ -362,8 +349,7 @@ namespace AppForWorkingWithXML.Migrations
                 name: "Params",
                 columns: table => new
                 {
-                    Id = table.Column<long>(nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Id = table.Column<long>(nullable: false),
                     ObjectId = table.Column<long>(nullable: false),
                     ChangeId = table.Column<long>(nullable: true),
                     ChangeIdSpecified = table.Column<bool>(nullable: false),
@@ -383,8 +369,7 @@ namespace AppForWorkingWithXML.Migrations
                 name: "ParamTypes",
                 columns: table => new
                 {
-                    Id = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Id = table.Column<int>(nullable: false),
                     Name = table.Column<string>(nullable: true),
                     Code = table.Column<string>(nullable: true),
                     Desc = table.Column<string>(nullable: true),
@@ -421,8 +406,7 @@ namespace AppForWorkingWithXML.Migrations
                 name: "Rooms",
                 columns: table => new
                 {
-                    Id = table.Column<long>(nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Id = table.Column<long>(nullable: false),
                     ObjectId = table.Column<long>(nullable: false),
                     ObjectGuid = table.Column<Guid>(nullable: false),
                     ChangeId = table.Column<long>(nullable: false),
@@ -448,8 +432,7 @@ namespace AppForWorkingWithXML.Migrations
                 name: "RoomTypes",
                 columns: table => new
                 {
-                    Id = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Id = table.Column<int>(nullable: false),
                     Name = table.Column<string>(nullable: true),
                     ShortName = table.Column<string>(nullable: true),
                     Desc = table.Column<string>(nullable: true),
@@ -467,8 +450,7 @@ namespace AppForWorkingWithXML.Migrations
                 name: "Steads",
                 columns: table => new
                 {
-                    Id = table.Column<long>(nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Id = table.Column<long>(nullable: false),
                     ObjectId = table.Column<long>(nullable: false),
                     ObjectGuid = table.Column<Guid>(nullable: false),
                     ChangeId = table.Column<long>(nullable: false),

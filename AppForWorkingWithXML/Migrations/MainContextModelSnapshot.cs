@@ -22,9 +22,7 @@ namespace AppForWorkingWithXML.Migrations
             modelBuilder.Entity("AppForWorkingWithXML.Models.Entities.AddressObjectTypesAddressObjectType", b =>
                 {
                     b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                        .HasColumnType("int");
 
                     b.Property<string>("Desc")
                         .HasColumnType("nvarchar(max)");
@@ -116,9 +114,7 @@ namespace AppForWorkingWithXML.Migrations
             modelBuilder.Entity("AppForWorkingWithXML.Models.Entities.ApartmentTypesApartmentType", b =>
                 {
                     b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                        .HasColumnType("int");
 
                     b.Property<string>("Desc")
                         .HasColumnType("nvarchar(max)");
@@ -149,9 +145,7 @@ namespace AppForWorkingWithXML.Migrations
             modelBuilder.Entity("AppForWorkingWithXML.Models.Entities.ApartmentsApartment", b =>
                 {
                     b.Property<long>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("bigint")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                        .HasColumnType("bigint");
 
                     b.Property<int>("ApartType")
                         .HasColumnType("int");
@@ -206,9 +200,7 @@ namespace AppForWorkingWithXML.Migrations
             modelBuilder.Entity("AppForWorkingWithXML.Models.Entities.AsAddrObjDivisionItemsItem", b =>
                 {
                     b.Property<long>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("bigint")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                        .HasColumnType("bigint");
 
                     b.Property<long>("ChangeId")
                         .HasColumnType("bigint");
@@ -227,9 +219,7 @@ namespace AppForWorkingWithXML.Migrations
             modelBuilder.Entity("AppForWorkingWithXML.Models.Entities.AsAdmHierarchyItemsItem", b =>
                 {
                     b.Property<long>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("bigint")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                        .HasColumnType("bigint");
 
                     b.Property<string>("AreaCode")
                         .HasColumnType("nvarchar(max)");
@@ -329,9 +319,7 @@ namespace AppForWorkingWithXML.Migrations
             modelBuilder.Entity("AppForWorkingWithXML.Models.Entities.AsMunHierarchyItemsItem", b =>
                 {
                     b.Property<long>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("bigint")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                        .HasColumnType("bigint");
 
                     b.Property<long>("ChangeId")
                         .HasColumnType("bigint");
@@ -383,9 +371,7 @@ namespace AppForWorkingWithXML.Migrations
             modelBuilder.Entity("AppForWorkingWithXML.Models.Entities.CarplacesCarplace", b =>
                 {
                     b.Property<long>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("bigint")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                        .HasColumnType("bigint");
 
                     b.Property<long>("ChangeId")
                         .HasColumnType("bigint");
@@ -437,9 +423,7 @@ namespace AppForWorkingWithXML.Migrations
             modelBuilder.Entity("AppForWorkingWithXML.Models.Entities.HouseTypesHouseType", b =>
                 {
                     b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                        .HasColumnType("int");
 
                     b.Property<string>("Desc")
                         .HasColumnType("nvarchar(max)");
@@ -470,9 +454,7 @@ namespace AppForWorkingWithXML.Migrations
             modelBuilder.Entity("AppForWorkingWithXML.Models.Entities.HousesHouse", b =>
                 {
                     b.Property<long>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("bigint")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                        .HasColumnType("bigint");
 
                     b.Property<string>("AddNum1")
                         .HasColumnType("nvarchar(max)");
@@ -539,9 +521,7 @@ namespace AppForWorkingWithXML.Migrations
             modelBuilder.Entity("AppForWorkingWithXML.Models.Entities.NormativeDocsKind", b =>
                 {
                     b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                        .HasColumnType("int");
 
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
@@ -554,9 +534,7 @@ namespace AppForWorkingWithXML.Migrations
             modelBuilder.Entity("AppForWorkingWithXML.Models.Entities.NormativeDocsNormativeDoc", b =>
                 {
                     b.Property<long>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("bigint")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                        .HasColumnType("bigint");
 
                     b.Property<DateTime?>("AccDate")
                         .HasColumnType("datetime2");
@@ -605,9 +583,7 @@ namespace AppForWorkingWithXML.Migrations
             modelBuilder.Entity("AppForWorkingWithXML.Models.Entities.NormativeDocsType", b =>
                 {
                     b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                        .HasColumnType("int");
 
                     b.Property<DateTime>("EndDate")
                         .HasColumnType("datetime2");
@@ -659,9 +635,7 @@ namespace AppForWorkingWithXML.Migrations
             modelBuilder.Entity("AppForWorkingWithXML.Models.Entities.OperationTypesOperationType", b =>
                 {
                     b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                        .HasColumnType("int");
 
                     b.Property<string>("Desc")
                         .HasColumnType("nvarchar(max)");
@@ -692,9 +666,7 @@ namespace AppForWorkingWithXML.Migrations
             modelBuilder.Entity("AppForWorkingWithXML.Models.Entities.ParamTypesParamType", b =>
                 {
                     b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                        .HasColumnType("int");
 
                     b.Property<string>("Code")
                         .HasColumnType("nvarchar(max)");
@@ -725,9 +697,7 @@ namespace AppForWorkingWithXML.Migrations
             modelBuilder.Entity("AppForWorkingWithXML.Models.Entities.ParamsParam", b =>
                 {
                     b.Property<long>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("bigint")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                        .HasColumnType("bigint");
 
                     b.Property<long?>("ChangeId")
                         .HasColumnType("bigint");
@@ -797,9 +767,7 @@ namespace AppForWorkingWithXML.Migrations
             modelBuilder.Entity("AppForWorkingWithXML.Models.Entities.RoomTypesRoomType", b =>
                 {
                     b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                        .HasColumnType("int");
 
                     b.Property<string>("Desc")
                         .HasColumnType("nvarchar(max)");
@@ -830,9 +798,7 @@ namespace AppForWorkingWithXML.Migrations
             modelBuilder.Entity("AppForWorkingWithXML.Models.Entities.RoomsRoom", b =>
                 {
                     b.Property<long>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("bigint")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                        .HasColumnType("bigint");
 
                     b.Property<long>("ChangeId")
                         .HasColumnType("bigint");
@@ -887,9 +853,7 @@ namespace AppForWorkingWithXML.Migrations
             modelBuilder.Entity("AppForWorkingWithXML.Models.Entities.SteadsStead", b =>
                 {
                     b.Property<long>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("bigint")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                        .HasColumnType("bigint");
 
                     b.Property<long>("ChangeId")
                         .HasColumnType("bigint");
