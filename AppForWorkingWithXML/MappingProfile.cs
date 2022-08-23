@@ -26,13 +26,13 @@ namespace AppForWorkingWithXML
                  .ForMember(nameof(Models.Entities.AddressObjectsObject.IsActual), opt => opt.MapFrom(n => n.ISACTUAL))
                  .ForMember(nameof(Models.Entities.AddressObjectsObject.IsActive), opt => opt.MapFrom(n => n.ISACTIVE));
 
-            CreateMap<Models.Entities.AsAddrObjDivisionItemsItem, Models.Dto.AsAddrObjDivisionItemsItem>().ReverseMap()
+            CreateMap<Models.Entities.AsAddrObjDivisionItemsItem, Models.Dto.ITEM>().ReverseMap()
                  .ForMember(nameof(Models.Entities.AsAddrObjDivisionItemsItem.Id), opt => opt.MapFrom(n => n.ID))
                  .ForMember(nameof(Models.Entities.AsAddrObjDivisionItemsItem.ParentId), opt => opt.MapFrom(n => n.PARENTID))
                  .ForMember(nameof(Models.Entities.AsAddrObjDivisionItemsItem.ChildId), opt => opt.MapFrom(n => n.CHILDID))
                  .ForMember(nameof(Models.Entities.AsAddrObjDivisionItemsItem.ChangeId), opt => opt.MapFrom(n => n.CHANGEID));
 
-            CreateMap<Models.Entities.AddressObjectTypesAddressObjectType, Models.Dto.AddressObjectTypesAddressObjectType>().ReverseMap()
+            CreateMap<Models.Entities.AddressObjectTypesAddressObjectType, Models.Dto.ADDRESSOBJECTTYPE>().ReverseMap()
                  .ForMember(nameof(Models.Entities.AddressObjectTypesAddressObjectType.Id), opt => opt.MapFrom(n => n.ID))
                  .ForMember(nameof(Models.Entities.AddressObjectTypesAddressObjectType.Level), opt => opt.MapFrom(n => n.LEVEL))
                  .ForMember(nameof(Models.Entities.AddressObjectTypesAddressObjectType.ShortName), opt => opt.MapFrom(n => n.SHORTNAME))
@@ -43,7 +43,7 @@ namespace AppForWorkingWithXML
                  .ForMember(nameof(Models.Entities.AddressObjectTypesAddressObjectType.EndDate), opt => opt.MapFrom(n => n.ENDDATE))
                  .ForMember(nameof(Models.Entities.AddressObjectTypesAddressObjectType.IsActive), opt => opt.MapFrom(n => n.ISACTIVE));
 
-            CreateMap<Models.Entities.AsAdmHierarchyItemsItem, Models.Dto.AsAdmHierarchyItemsItem>().ReverseMap()
+            CreateMap<Models.Entities.AsAdmHierarchyItemsItem, Models.Dto.AsAdmHierarchy.ITEM>().ReverseMap()
                  .ForMember(nameof(Models.Entities.AsAdmHierarchyItemsItem.Id), opt => opt.MapFrom(n => n.ID))
                  .ForMember(nameof(Models.Entities.AsAdmHierarchyItemsItem.ObjectId), opt => opt.MapFrom(n => n.OBJECTID))
                  .ForMember(nameof(Models.Entities.AsAdmHierarchyItemsItem.ParentObjId), opt => opt.MapFrom(n => n.PARENTOBJID))
@@ -65,7 +65,7 @@ namespace AppForWorkingWithXML
                  .ForMember(nameof(Models.Entities.AsAdmHierarchyItemsItem.IsActive), opt => opt.MapFrom(n => n.ISACTIVE))
                  .ForMember(nameof(Models.Entities.AsAdmHierarchyItemsItem.Path), opt => opt.MapFrom(n => n.PATH));
 
-            CreateMap<Models.Entities.ApartmentsApartment, Models.Dto.ApartmentsApartment>().ReverseMap()
+            CreateMap<Models.Entities.ApartmentsApartment, Models.Dto.APARTMENT>().ReverseMap()
                  .ForMember(nameof(Models.Entities.ApartmentsApartment.Id), opt => opt.MapFrom(n => n.ID))
                  .ForMember(nameof(Models.Entities.ApartmentsApartment.ObjectId), opt => opt.MapFrom(n => n.OBJECTID))
                  .ForMember(nameof(Models.Entities.ApartmentsApartment.ObjectGuid), opt => opt.MapFrom(n => n.OBJECTGUID))
@@ -83,7 +83,7 @@ namespace AppForWorkingWithXML
                  .ForMember(nameof(Models.Entities.ApartmentsApartment.IsActual), opt => opt.MapFrom(n => n.ISACTUAL))
                  .ForMember(nameof(Models.Entities.ApartmentsApartment.IsActive), opt => opt.MapFrom(n => n.ISACTIVE));
 
-            CreateMap<Models.Entities.ApartmentTypesApartmentType, Models.Dto.ApartmentTypesApartmentType>().ReverseMap()
+            CreateMap<Models.Entities.ApartmentTypesApartmentType, Models.Dto.APARTMENTTYPE>().ReverseMap()
                  .ForMember(nameof(Models.Entities.ApartmentTypesApartmentType.Id), opt => opt.MapFrom(n => n.ID))
                  .ForMember(nameof(Models.Entities.ApartmentTypesApartmentType.Name), opt => opt.MapFrom(n => n.NAME))
                  .ForMember(nameof(Models.Entities.ApartmentTypesApartmentType.ShortName), opt => opt.MapFrom(n => n.SHORTNAME))
@@ -93,7 +93,7 @@ namespace AppForWorkingWithXML
                  .ForMember(nameof(Models.Entities.ApartmentTypesApartmentType.EndDate), opt => opt.MapFrom(n => n.ENDDATE))
                  .ForMember(nameof(Models.Entities.ApartmentTypesApartmentType.IsActive), opt => opt.MapFrom(n => n.ISACTIVE));
 
-            CreateMap<Models.Entities.CarplacesCarplace, Models.Dto.CarplacesCarplace>().ReverseMap()
+            CreateMap<Models.Entities.CarplacesCarplace, Models.Dto.CARPLACE>().ReverseMap()
                  .ForMember(nameof(Models.Entities.CarplacesCarplace.Id), opt => opt.MapFrom(n => n.ID))
                  .ForMember(nameof(Models.Entities.CarplacesCarplace.ObjectId), opt => opt.MapFrom(n => n.OBJECTID))
                  .ForMember(nameof(Models.Entities.CarplacesCarplace.ObjectGuid), opt => opt.MapFrom(n => n.OBJECTGUID))
@@ -110,7 +110,7 @@ namespace AppForWorkingWithXML
                  .ForMember(nameof(Models.Entities.CarplacesCarplace.IsActual), opt => opt.MapFrom(n => n.ISACTUAL))
                  .ForMember(nameof(Models.Entities.CarplacesCarplace.IsActive), opt => opt.MapFrom(n => n.ISACTIVE));
 
-            CreateMap<Models.Entities.AsChangeHistoryItemsItem, Models.Dto.AsChangeHistoryItemsItem>().ReverseMap()
+            CreateMap<Models.Entities.AsChangeHistoryItemsItem, Models.Dto.AsChangeHistory.ITEM>().ReverseMap()
                  .ForMember(nameof(Models.Entities.AsChangeHistoryItemsItem.Id), opt => opt.Ignore())
                  .ForMember(nameof(Models.Entities.AsChangeHistoryItemsItem.ChangeId), opt => opt.MapFrom(n => n.CHANGEID))
                  .ForMember(nameof(Models.Entities.AsChangeHistoryItemsItem.ObjectId), opt => opt.MapFrom(n => n.OBJECTID))
@@ -120,7 +120,7 @@ namespace AppForWorkingWithXML
                  .ForMember(nameof(Models.Entities.AsChangeHistoryItemsItem.NDocIdSpecified), opt => opt.MapFrom(n => n.NDOCIDSpecified))
                  .ForMember(nameof(Models.Entities.AsChangeHistoryItemsItem.ChangeDate), opt => opt.MapFrom(n => n.CHANGEDATE));
 
-            CreateMap<Models.Entities.HousesHouse, Models.Dto.HousesHouse>().ReverseMap()
+            CreateMap<Models.Entities.HousesHouse, Models.Dto.HOUSE>().ReverseMap()
                  .ForMember(nameof(Models.Entities.HousesHouse.Id), opt => opt.MapFrom(n => n.ID))
                  .ForMember(nameof(Models.Entities.HousesHouse.ObjectId), opt => opt.MapFrom(n => n.OBJECTID))
                  .ForMember(nameof(Models.Entities.HousesHouse.ObjectGuid), opt => opt.MapFrom(n => n.OBJECTGUID))
@@ -142,7 +142,7 @@ namespace AppForWorkingWithXML
                  .ForMember(nameof(Models.Entities.HousesHouse.IsActual), opt => opt.MapFrom(n => n.ISACTUAL))
                  .ForMember(nameof(Models.Entities.HousesHouse.IsActive), opt => opt.MapFrom(n => n.ISACTIVE));
 
-            CreateMap<Models.Entities.HouseTypesHouseType, Models.Dto.HouseTypesHouseType>().ReverseMap()
+            CreateMap<Models.Entities.HouseTypesHouseType, Models.Dto.HOUSETYPE>().ReverseMap()
                  .ForMember(nameof(Models.Entities.HouseTypesHouseType.Id), opt => opt.MapFrom(n => n.ID))
                  .ForMember(nameof(Models.Entities.HouseTypesHouseType.Name), opt => opt.MapFrom(n => n.NAME))
                  .ForMember(nameof(Models.Entities.HouseTypesHouseType.ShortName), opt => opt.MapFrom(n => n.SHORTNAME))
@@ -152,7 +152,7 @@ namespace AppForWorkingWithXML
                  .ForMember(nameof(Models.Entities.HouseTypesHouseType.EndDate), opt => opt.MapFrom(n => n.ENDDATE))
                  .ForMember(nameof(Models.Entities.HouseTypesHouseType.IsActive), opt => opt.MapFrom(n => n.ISACTIVE));
 
-            CreateMap<Models.Entities.AsMunHierarchyItemsItem, Models.Dto.AsMunHierarchyItemsItem>().ReverseMap()
+            CreateMap<Models.Entities.AsMunHierarchyItemsItem, Models.Dto.AsMunHierarchy.ITEM>().ReverseMap()
                  .ForMember(nameof(Models.Entities.AsMunHierarchyItemsItem.Id), opt => opt.MapFrom(n => n.ID))
                  .ForMember(nameof(Models.Entities.AsMunHierarchyItemsItem.ObjectId), opt => opt.MapFrom(n => n.OBJECTID))
                  .ForMember(nameof(Models.Entities.AsMunHierarchyItemsItem.ParentObjId), opt => opt.MapFrom(n => n.PARENTOBJID))
@@ -169,7 +169,7 @@ namespace AppForWorkingWithXML
                  .ForMember(nameof(Models.Entities.AsMunHierarchyItemsItem.IsActive), opt => opt.MapFrom(n => n.ISACTIVE))
                  .ForMember(nameof(Models.Entities.AsMunHierarchyItemsItem.Path), opt => opt.MapFrom(n => n.PATH));
 
-            CreateMap<Models.Entities.NormativeDocsNormativeDoc, Models.Dto.NormativeDocsNormativeDoc>().ReverseMap()
+            CreateMap<Models.Entities.NormativeDocsNormativeDoc, Models.Dto.NORMDOC>().ReverseMap()
                  .ForMember(nameof(Models.Entities.NormativeDocsNormativeDoc.Id), opt => opt.MapFrom(n => n.ID))
                  .ForMember(nameof(Models.Entities.NormativeDocsNormativeDoc.Name), opt => opt.MapFrom(n => n.NAME))
                  .ForMember(nameof(Models.Entities.NormativeDocsNormativeDoc.Date), opt => opt.MapFrom(n => n.DATE))
@@ -185,17 +185,17 @@ namespace AppForWorkingWithXML
                  .ForMember(nameof(Models.Entities.NormativeDocsNormativeDoc.AccDateSpecified), opt => opt.MapFrom(n => n.ACCDATESpecified))
                  .ForMember(nameof(Models.Entities.NormativeDocsNormativeDoc.Comment), opt => opt.MapFrom(n => n.COMMENT));
 
-            CreateMap<Models.Entities.NormativeDocsKind, Models.Dto.NormativeDocsKind>().ReverseMap()
+            CreateMap<Models.Entities.NormativeDocsKind, Models.Dto.NDOCKIND>().ReverseMap()
                  .ForMember(nameof(Models.Entities.NormativeDocsKind.Id), opt => opt.MapFrom(n => n.ID))
                  .ForMember(nameof(Models.Entities.NormativeDocsKind.Name), opt => opt.MapFrom(n => n.NAME));
 
-            CreateMap<Models.Entities.NormativeDocsType, Models.Dto.NormativeDocsType>().ReverseMap()
+            CreateMap<Models.Entities.NormativeDocsType, Models.Dto.NDOCTYPE>().ReverseMap()
                  .ForMember(nameof(Models.Entities.NormativeDocsType.Id), opt => opt.MapFrom(n => n.ID))
                  .ForMember(nameof(Models.Entities.NormativeDocsType.Name), opt => opt.MapFrom(n => n.NAME))
                  .ForMember(nameof(Models.Entities.NormativeDocsType.StartDate), opt => opt.MapFrom(n => n.STARTDATE))
                  .ForMember(nameof(Models.Entities.NormativeDocsType.EndDate), opt => opt.MapFrom(n => n.ENDDATE));
 
-            CreateMap<Models.Entities.ObjectLevelsObjectLevel, Models.Dto.ObjectLevelsObjectLevel>().ReverseMap()
+            CreateMap<Models.Entities.ObjectLevelsObjectLevel, Models.Dto.OBJECTLEVEL>().ReverseMap()
                  .ForMember(nameof(Models.Entities.ObjectLevelsObjectLevel.Id), opt => opt.Ignore())
                  .ForMember(nameof(Models.Entities.ObjectLevelsObjectLevel.Level), opt => opt.MapFrom(n => n.LEVEL))
                  .ForMember(nameof(Models.Entities.ObjectLevelsObjectLevel.Name), opt => opt.MapFrom(n => n.NAME))
@@ -205,7 +205,7 @@ namespace AppForWorkingWithXML
                  .ForMember(nameof(Models.Entities.ObjectLevelsObjectLevel.EndDate), opt => opt.MapFrom(n => n.ENDDATE))
                  .ForMember(nameof(Models.Entities.ObjectLevelsObjectLevel.IsActive), opt => opt.MapFrom(n => n.ISACTIVE));
 
-            CreateMap<Models.Entities.OperationTypesOperationType, Models.Dto.OperationTypesOperationType>().ReverseMap()
+            CreateMap<Models.Entities.OperationTypesOperationType, Models.Dto.OPERATIONTYPE>().ReverseMap()
                  .ForMember(nameof(Models.Entities.OperationTypesOperationType.Id), opt => opt.MapFrom(n => n.ID))
                  .ForMember(nameof(Models.Entities.OperationTypesOperationType.Name), opt => opt.MapFrom(n => n.NAME))
                  .ForMember(nameof(Models.Entities.OperationTypesOperationType.ShortName), opt => opt.MapFrom(n => n.SHORTNAME))
@@ -215,7 +215,7 @@ namespace AppForWorkingWithXML
                  .ForMember(nameof(Models.Entities.OperationTypesOperationType.EndDate), opt => opt.MapFrom(n => n.ENDDATE))
                  .ForMember(nameof(Models.Entities.OperationTypesOperationType.IsActive), opt => opt.MapFrom(n => n.ISACTIVE));
 
-            CreateMap<Models.Entities.ParamsParam, Models.Dto.ParamsParam>().ReverseMap()
+            CreateMap<Models.Entities.ParamsParam, Models.Dto.PARAM>().ReverseMap()
                  .ForMember(nameof(Models.Entities.ParamsParam.Id), opt => opt.MapFrom(n => n.ID))
                  .ForMember(nameof(Models.Entities.ParamsParam.ObjectId), opt => opt.MapFrom(n => n.OBJECTID))
                  .ForMember(nameof(Models.Entities.ParamsParam.ChangeId), opt => opt.MapFrom(n => n.CHANGEID))
@@ -227,7 +227,7 @@ namespace AppForWorkingWithXML
                  .ForMember(nameof(Models.Entities.ParamsParam.StartDate), opt => opt.MapFrom(n => n.STARTDATE))
                  .ForMember(nameof(Models.Entities.ParamsParam.EndDate), opt => opt.MapFrom(n => n.ENDDATE));
 
-            CreateMap<Models.Entities.ParamTypesParamType, Models.Dto.ParamTypesParamType>().ReverseMap()
+            CreateMap<Models.Entities.ParamTypesParamType, Models.Dto.PARAMTYPE>().ReverseMap()
                  .ForMember(nameof(Models.Entities.ParamTypesParamType.Id), opt => opt.MapFrom(n => n.ID))
                  .ForMember(nameof(Models.Entities.ParamTypesParamType.Name), opt => opt.MapFrom(n => n.NAME))
                  .ForMember(nameof(Models.Entities.ParamTypesParamType.Code), opt => opt.MapFrom(n => n.CODE))
@@ -237,7 +237,7 @@ namespace AppForWorkingWithXML
                  .ForMember(nameof(Models.Entities.ParamTypesParamType.EndDate), opt => opt.MapFrom(n => n.ENDDATE))
                  .ForMember(nameof(Models.Entities.ParamTypesParamType.IsActive), opt => opt.MapFrom(n => n.ISACTIVE));
 
-            CreateMap<Models.Entities.ReestrObjectsObject, Models.Dto.ReestrObjectsObject>().ReverseMap()
+            CreateMap<Models.Entities.ReestrObjectsObject, Models.Dto.OBJECT>().ReverseMap()
                  .ForMember(nameof(Models.Entities.ReestrObjectsObject.Id), opt => opt.Ignore())
                  .ForMember(nameof(Models.Entities.ReestrObjectsObject.ObjectId), opt => opt.MapFrom(n => n.OBJECTID))
                  .ForMember(nameof(Models.Entities.ReestrObjectsObject.CreateDate), opt => opt.MapFrom(n => n.CREATEDATE))
@@ -247,7 +247,7 @@ namespace AppForWorkingWithXML
                  .ForMember(nameof(Models.Entities.ReestrObjectsObject.ObjectGuid), opt => opt.MapFrom(n => n.OBJECTGUID))
                  .ForMember(nameof(Models.Entities.ReestrObjectsObject.IsActive), opt => opt.MapFrom(n => n.ISACTIVE));
 
-            CreateMap<Models.Entities.RoomsRoom, Models.Dto.RoomsRoom>().ReverseMap()
+            CreateMap<Models.Entities.RoomsRoom, Models.Dto.ROOM>().ReverseMap()
                  .ForMember(nameof(Models.Entities.RoomsRoom.Id), opt => opt.MapFrom(n => n.ID))
                  .ForMember(nameof(Models.Entities.RoomsRoom.ObjectId), opt => opt.MapFrom(n => n.OBJECTID))
                  .ForMember(nameof(Models.Entities.RoomsRoom.ObjectGuid), opt => opt.MapFrom(n => n.OBJECTGUID))
@@ -265,7 +265,7 @@ namespace AppForWorkingWithXML
                  .ForMember(nameof(Models.Entities.RoomsRoom.IsActual), opt => opt.MapFrom(n => n.ISACTUAL))
                  .ForMember(nameof(Models.Entities.RoomsRoom.IsActive), opt => opt.MapFrom(n => n.ISACTIVE));
 
-            CreateMap<Models.Entities.RoomTypesRoomType, Models.Dto.RoomTypesRoomType>().ReverseMap()
+            CreateMap<Models.Entities.RoomTypesRoomType, Models.Dto.ROOMTYPE>().ReverseMap()
                  .ForMember(nameof(Models.Entities.RoomTypesRoomType.Id), opt => opt.MapFrom(n => n.ID))
                  .ForMember(nameof(Models.Entities.RoomTypesRoomType.Name), opt => opt.MapFrom(n => n.NAME))
                  .ForMember(nameof(Models.Entities.RoomTypesRoomType.ShortName), opt => opt.MapFrom(n => n.SHORTNAME))
@@ -275,7 +275,7 @@ namespace AppForWorkingWithXML
                  .ForMember(nameof(Models.Entities.RoomTypesRoomType.EndDate), opt => opt.MapFrom(n => n.ENDDATE))
                  .ForMember(nameof(Models.Entities.RoomTypesRoomType.IsActive), opt => opt.MapFrom(n => n.ISACTIVE));
 
-            CreateMap<Models.Entities.SteadsStead, Models.Dto.SteadsStead>().ReverseMap()
+            CreateMap<Models.Entities.SteadsStead, Models.Dto.STEAD>().ReverseMap()
                  .ForMember(nameof(Models.Entities.SteadsStead.Id), opt => opt.MapFrom(n => n.ID))
                  .ForMember(nameof(Models.Entities.SteadsStead.ObjectId), opt => opt.MapFrom(n => n.OBJECTID))
                  .ForMember(nameof(Models.Entities.SteadsStead.ObjectGuid), opt => opt.MapFrom(n => n.OBJECTGUID))
