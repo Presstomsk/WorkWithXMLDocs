@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
 namespace AppForWorkingWithXML.Models.Entities
@@ -10,6 +11,7 @@ namespace AppForWorkingWithXML.Models.Entities
     }
     public class AddressObjectTypesAddressObjectType
     {
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int Id { get; set; }
         public int Level { get; set; }        
         public string ShortName { get; set; }       

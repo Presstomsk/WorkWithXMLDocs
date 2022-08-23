@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
 namespace AppForWorkingWithXML.Models.Entities
@@ -10,6 +11,7 @@ namespace AppForWorkingWithXML.Models.Entities
     }
     public class ParamsParam
     {
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public long Id { get; set; }
         public long ObjectId { get; set; }       
         public long? ChangeId { get; set; }       
