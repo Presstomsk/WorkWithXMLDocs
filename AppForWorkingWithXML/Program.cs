@@ -15,20 +15,20 @@ namespace AppForWorkingWithXML
     {
         static void Main(string[] args)
         {
-            XmlSerializer formatter = new XmlSerializer(typeof(ADDRESSOBJECTS));
+            XmlSerializer formatter = new XmlSerializer(typeof(STEADS));
             var config = new MapperConfiguration(cfg => cfg.AddProfile(new MappingProfile()));
             var mapper = new Mapper(config);
-            List<AddressObjectsObject> list = new List<AddressObjectsObject>();
+            List<SteadsStead> list = new List<SteadsStead>();
 
-            using (FileStream fs = new FileStream(@"C:\Users\user\Desktop\Рабочая\Docs\99\AS_ADDR_OBJ_20220808_e44fba35-1045-48b4-bba0-ddb28e5126fa.XML", FileMode.OpenOrCreate))
+            using (FileStream fs = new FileStream(@"C:\Users\user\Desktop\Рабочая\Docs\99\AS_STEADS_20220808_59873b8f-d237-42b9-9cbe-592d9de8e2df.XML", FileMode.OpenOrCreate))
             {
-                ADDRESSOBJECTS objects = formatter.Deserialize(fs) as ADDRESSOBJECTS;
+                STEADS objects = formatter.Deserialize(fs) as STEADS;
 
                 if (objects != null)
                 {
-                    foreach (var obj in objects.OBJECT)
+                    foreach (var obj in objects.STEAD)
                     {
-                        var entity = mapper.Map<AddressObjectsObject>(obj);
+                        var entity = mapper.Map<SteadsStead>(obj);
                         list.Add(entity);
                     }               
                 }
@@ -39,7 +39,7 @@ namespace AppForWorkingWithXML
 
                 foreach (var item in list) 
                 {
-                    db.AddressObjects.Add(item);
+                    db.Steads.Add(item);
                 }
 
                 db.SaveChanges();     
